@@ -63,6 +63,8 @@ function attachmentGallery(c){
 function topicCard(t, open=false){
   const el=document.createElement("article");
   el.className="topic"+(open?" open":"");
+  el.dataset.topicId=t.id;
+  
   el.innerHTML=`
     <button type="button">
       <div>
@@ -107,6 +109,39 @@ function openCategory(id){
   }
   detailView.scrollIntoView({behavior:"smooth",block:"start"});
 }
+
+function openTopicByTitle(title){
+  const t = topics.find(x => x.title === title);
+  if(!t) return;
+  const c = categories.find(x =>
+    (x.topicIds || []).includes(t.id)
+  );
+  if(!c) return;
+  // 先開啟該主題所在的大分類
+  openCategory(c.id);
+  // 找到指定的 title，展開並捲動到該位置
+  requestAnimationFrame(() => {
+    const cards = [...document.querySelectorAll("#topicList .topic")];
+    const card = cards.find(
+      el => el.dataset.topicId === t.id
+    );
+
+    if(!card) return;
+    card.classList.add("open");
+    card.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+}
+
+document.addEventListener("click", e => {
+  const link = e.target.closest("[data-open-topic]");
+  if(!link) return;
+  e.preventDefault();
+  openTopicByTitle(link.dataset.openTopic);
+});
+
 function goHome(){
   detailView.classList.remove("active");
   searchView.classList.remove("active");
