@@ -163,7 +163,7 @@ const topics = [
  keywords:"僱傭契約 國輪 外輪 騎縫章 附錄 體檢表 黃皮書 黃熱病 疫苗 證件 證書 有效期限 一年 2吋 照片",
  html:`<ol>
  <li><strong>僱傭契約：</strong>國輪僱傭契約書 4 份、外輪僱傭契約書 2 份；依範例填寫，簽名或蓋章處加蓋私章。國輪 4 份需蓋契約騎縫章；2 張「台灣船員定期僱傭契約附錄」請簽名。</li>
- <li><strong>體檢表：</strong>請參閱<a href="#" data-open-topic="台籍船員體檢注意事項">「台籍船員體檢注意事項」</a>。</li>
+ <li><strong>體檢表：</strong>請參閱<a href="#" data-open-topic="medical-guide">「台籍船員體檢注意事項」</a>。</li>
  <li><strong>黃皮書：</strong>務必完成黃熱病疫苗注射，效期應為無限期。</li>
  <li><strong>證件效期：</strong>所有證件、證書、上船文件、體檢表等，有效期限皆至少一年以上，並不得在船上換發（實習生換發適任證書除外）。</li>
  <li><strong>照片：</strong>請隨身攜帶半年內 2 吋近照 4 張。</li>

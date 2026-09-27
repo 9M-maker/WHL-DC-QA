@@ -110,28 +110,33 @@ function openCategory(id){
   detailView.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-function openTopicByTitle(title){
-  const t = topics.find(x => x.title === title);
+function openTopicById(topicId){
+  const t = byId[topicId];
   if(!t) return;
-  const c = categories.find(x =>
-    (x.topicIds || []).includes(t.id)
-  );
-  if(!c) return;
-  // 先開啟該主題所在的大分類
-  openCategory(c.id);
-  // 找到指定的 title，展開並捲動到該位置
-  requestAnimationFrame(() => {
-    const cards = [...document.querySelectorAll("#topicList .topic")];
-    const card = cards.find(
-      el => el.dataset.topicId === t.id
-    );
 
+  const c = categories.find(x =>
+    (x.topicIds || []).includes(topicId)
+  );
+
+  if(!c) return;
+
+  // 開啟此主題所在的大分類
+  openCategory(c.id);
+
+  // 等畫面建立完成後，展開指定主題並捲動過去
+  requestAnimationFrame(() => {
+    const card = document.querySelector(
+      `#topicList .topic[data-topic-id="${topicId}"]`
+    );
+    
     if(!card) return;
     card.classList.add("open");
-    card.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+    setTimeout(() => {
+      card.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 100);
   });
 }
 
@@ -139,7 +144,7 @@ document.addEventListener("click", e => {
   const link = e.target.closest("[data-open-topic]");
   if(!link) return;
   e.preventDefault();
-  openTopicByTitle(link.dataset.openTopic);
+  openTopicById(link.dataset.openTopic);
 });
 
 function goHome(){
