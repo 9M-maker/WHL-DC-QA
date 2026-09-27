@@ -134,22 +134,22 @@ const topics = [
  <div class="table-scroll"><table>
  <thead><tr><th>職級</th><th>承辦人</th><th>分機</th></tr></thead>
  <tbody>
- <tr><td>船長</td><td>楊依晉 先生</td><td>6861</td></tr>
- <tr><td>大副</td><td>吳淑君 小姐</td><td>6862</td></tr>
- <tr><td>二副</td><td>陳紀璇 小姐</td><td>6863</td></tr>
- <tr><td>三副</td><td>黃俊諭 先生</td><td>6864</td></tr>
- <tr><td>水手長／木匠</td><td>葉祉妤 小姐</td><td>6865</td></tr>
- <tr><td>幹練水手／乙級水手</td><td>陳淑容 小姐</td><td>6866</td></tr>
- <tr><td>甲板教育訓練/甲板實習生</td><td>李昱欣 小姐</td><td>6868</td></tr>
- <tr><td>甲板教育訓練/甲板實習生</td><td>洪家芸 小姐</td><td>6867</td></tr>
- <tr><td>輪機長</td><td>柯婉蓉 小姐</td><td>6875</td></tr>
- <tr><td>大管</td><td>吳松哲 先生</td><td>6874</td></tr>
- <tr><td>二管</td><td>陳韋翰 先生</td><td>6877</td></tr>
- <tr><td>三管</td><td>蔡嘉伃 小姐</td><td>6856</td></tr>
- <tr><td>加油長／銅匠／機匠／副機匠</td><td>楊承玫 小姐</td><td>6872</td></tr>
- <tr><td>大廚</td><td>林依雯 小姐</td><td>6873</td></tr>
- <tr><td>機艙教育訓練/機艙實習生</td><td>劉 御 先生</td><td>6878</td></tr>
- <tr><td>機艙教育訓練/機艙實習生</td><td>劉玳伶 小姐</td><td>6879</td></tr>
+ <tr><td>船長</td><td>楊 先生</td><td>6861</td></tr>
+ <tr><td>大副</td><td>吳 小姐</td><td>6862</td></tr>
+ <tr><td>二副</td><td>陳 小姐</td><td>6863</td></tr>
+ <tr><td>三副</td><td>黃 先生</td><td>6864</td></tr>
+ <tr><td>水手長／木匠</td><td>葉 小姐</td><td>6865</td></tr>
+ <tr><td>幹練水手／乙級水手</td><td>陳 小姐</td><td>6866</td></tr>
+ <tr><td>甲板教育訓練/甲板實習生</td><td>李 小姐</td><td>6868</td></tr>
+ <tr><td>甲板教育訓練/甲板實習生</td><td>洪 小姐</td><td>6867</td></tr>
+ <tr><td>輪機長</td><td>柯 小姐</td><td>6875</td></tr>
+ <tr><td>大管</td><td>吳 先生</td><td>6874</td></tr>
+ <tr><td>二管</td><td>陳 先生</td><td>6877</td></tr>
+ <tr><td>三管</td><td>蔡 小姐</td><td>6856</td></tr>
+ <tr><td>加油長／銅匠／機匠／副機匠</td><td>楊 小姐</td><td>6872</td></tr>
+ <tr><td>大廚</td><td>林 小姐</td><td>6873</td></tr>
+ <tr><td>機艙教育訓練/機艙實習生</td><td>劉 先生</td><td>6878</td></tr>
+ <tr><td>機艙教育訓練/機艙實習生</td><td>劉 小姐</td><td>6879</td></tr>
  </tbody></table></div>`
 },
 {
@@ -304,7 +304,7 @@ const topics = [
  <li>薪資扣繳憑單：電子薪資單申請者，每年 2 月寄至電子信箱；紙本請洽承辦人。</li>
  <li>上國輪如未填寫撫養親屬申報表或人數有變動，請向船長領表填寫並寄回公司。</li>
  <li>薪資帳戶、戶籍、通訊地址、聯絡電話等如有更改，請立即以書面並簽名蓋章後通知公司。</li>
- <li>承辦人：船員管理二課 <strong>余慈蕙小姐（分機 6871）</strong>。</li>
+ <li>承辦人：船員管理二課 <strong>余小姐（分機 6871）</strong>。</li>
  </ol>`
 },
 {
@@ -316,7 +316,7 @@ const topics = [
  <li><strong>金額：</strong>幼稚園／國小／國中每名 10,000 元；高中（職）／大專／大學每名 3,000 元。</li>
  <li><strong>文件：</strong>依就讀階段檢附成績單或學費收據等，另附戶口名簿影本；收養者附收養證明。</li>
  <li><strong>不得申請：</strong>空中大學、函授、選讀生、國外院校、國內研究所（含）以上、退休船員或成績未達標準者。</li>
- <li>承辦人：船員管理一課 <strong>陳淑容小姐（分機 6866）</strong>。</li>
+ <li>承辦人：船員管理一課 <strong>陳小姐（分機 6866）</strong>。</li>
  </ol>`
 },
 {
@@ -352,26 +352,26 @@ const topics = [
 },
 {
  id:"english-learning", title:"船員英語線上學習補助", source:"附件第 5 頁",
- keywords:"英文 英語 線上學習 補助 甲級船員 海勤年資 1年 80% 20000 30小時 陳鈺洵 6876",
+ keywords:"英文 英語 線上學習 補助 甲級船員 海勤年資 1年 80% 20000 30小時 陳小姐 6876",
  html:`<p>公司自 2025 年 9 月 1 日起實施「船員英語學習與檢定獎助計畫」，並於 2026 年起將英語能力納入晉升船長及大副之資格條件。</p>
  <ol>
  <li><strong>資格：</strong>在船及在岸之甲級船員，且海勤年資滿 1 年以上。</li>
  <li><strong>補助：</strong>學費 80%（不含教材費等），每年上限 NT$20,000；半年內須完成 30 小時線上課程。</li>
  <li><strong>申請：</strong>報名前先聯繫承辦人；上船後檢附申請單、完訓證明、付款單據（須含公司抬頭與統編）。</li>
- <li><strong>承辦：</strong>船員管理二課 陳鈺洵小姐（分機 6876；erica_chen@wanhai.com）。</li>
+ <li><strong>承辦：</strong>船員管理二課 陳小姐（分機 6876；erica_chen@wanhai.com）。</li>
  <li><strong>注意：</strong>請於非當班時間完成學習。</li>
  </ol>`
 },
 {
  id:"toeic", title:"TOEIC 檢定補助與自主學習獎勵金", source:"附件第 5 頁",
- keywords:"TOEIC 多益 三副 860 990 USD300 V806 V105 李昱欣 6868 所得稅",
+ keywords:"TOEIC 多益 三副 860 990 USD300 V806 V105 李小姐 6868 所得稅",
  html:`<ol>
  <li><strong>資格：</strong>甲板甲級同仁；報名檢定考試時須為三副（含）以上職級。</li>
  <li><strong>報名費補助：</strong>無最低分數限制，每人每年限申請一次。</li>
  <li><strong>獎勵金：</strong>TOEIC 860～990 分者 USD 300，每人限申請一次。</li>
  <li><strong>申請：</strong>上船後檢附申請單、成績證明、付款單據正本，向船長透過船帳申請。</li>
  <li><strong>船帳科目：</strong>英語檢定報名費 V806；自主學習獎勵金 V105。</li>
- <li><strong>承辦：</strong>船員管理三課 李昱欣小姐（分機 6868）。</li>
+ <li><strong>承辦：</strong>船員管理三課 李小姐（分機 6868）。</li>
  <li><strong>注意：</strong>獎勵金屬個人所得，申請人應依規定申報年度所得稅。</li>
  </ol>`
 },
