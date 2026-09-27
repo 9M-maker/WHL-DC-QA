@@ -113,18 +113,63 @@ const DATA = {
       "imgs": []
     },
     {
-      "id": "tw_download",
-      "parent": "taiwan",
-      "title": "空白表單下載",
-      "short": "保留正式下載網址，之後可自行填入。",
-      "keywords": "空白 表單 下載",
-      "html": "`
-        <div class='downloads'><div class='drow'><div><h4>適任證書申請書</h4><p>空白表單下載網址</p></div><span class='placeholder'>https://www.motcmpb.gov.tw/DownloadFile/Search?SearchKey=適任&SiteId=1&NodeId=83&BaseCategoryId=59&IsTop=false</span></div>
-        <div class='drow'><div><h4>辦理執照委託書</h4><p>空白表單下載網址</p></div><span class='placeholder'>https://www.motcmpb.gov.tw/DownloadFile/Search?SearchKey=辦理船員業務&SiteId=1&NodeId=83&BaseCategoryId=&IsTop=false</span></div>
-        <div class='drow'><div><h4>船員服務經歷證明申請書</h4><p>空白表單下載網址</p></div><span class='placeholder'>https://www.motcmpb.gov.tw/DownloadFile/Search?SearchKey=船員服務經歷證明申請書&SiteId=1&NodeId=83&BaseCategoryId=59&IsTop=false</span></div>
-        </div>"`,
-      "imgs": []
-    },
+  "id": "tw_download",
+  "parent": "taiwan",
+  "title": "空白表單下載",
+  "short": "下載辦理台灣適任證書所需的空白表單。",
+  "keywords": "空白 表單 下載",
+  "html": `
+    <div class="downloads">
+
+      <div class="drow">
+        <div>
+          <h4>適任證書申請書</h4>
+          <p>交通部航港局空白表單</p>
+        </div>
+        <a
+          class="download-btn"
+          href="https://www.motcmpb.gov.tw/DownloadFile/Search?SearchKey=適任&SiteId=1&NodeId=83&BaseCategoryId=59&IsTop=false"
+          target="_blank"
+          rel="noopener"
+        >
+          點擊下載表單
+        </a>
+      </div>
+
+      <div class="drow">
+        <div>
+          <h4>辦理執照委託書</h4>
+          <p>交通部航港局空白表單</p>
+        </div>
+        <a
+          class="download-btn"
+          href="https://www.motcmpb.gov.tw/DownloadFile/Search?SearchKey=辦理船員業務&SiteId=1&NodeId=83&BaseCategoryId=&IsTop=false"
+          target="_blank"
+          rel="noopener"
+        >
+          點擊下載表單
+        </a>
+      </div>
+
+      <div class="drow">
+        <div>
+          <h4>船員服務經歷證明申請書</h4>
+          <p>交通部航港局空白表單</p>
+        </div>
+        <a
+          class="download-btn"
+          href="https://www.motcmpb.gov.tw/DownloadFile/Search?SearchKey=船員服務經歷證明申請書&SiteId=1&NodeId=83&BaseCategoryId=59&IsTop=false"
+          target="_blank"
+          rel="noopener"
+        >
+          點擊下載表單
+        </a>
+      </div>
+
+    </div>
+  `,
+  "imgs": []
+},
     {
       "id": "tr_start",
       "parent": "training",
