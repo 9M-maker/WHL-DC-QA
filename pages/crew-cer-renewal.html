@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>訓練簿與換證注意事項</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand"><div class="logo">⚓</div><div>船員證照小助手</div></div>
+    <div class="ver">GitHub Pages 靜態版</div>
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">CERTIFICATE & TRAINING GUIDE</div>
+    <h1><a href="index.html" style="color:inherit;text-decoration:none" aria-label="回首頁">訓練簿與換證注意事項</a></h1>
+    <p>先分成三大母類別：台灣適任證書、訓練紀錄簿、新加坡證書。點進母類別後，再依需求查看子類別說明與附件範例。</p>
+    <div class="search">
+      <input id="q" placeholder="例如：365天、委託書、SBTA、MED TW、自行換證…">
+      <button id="searchBtn">搜尋</button>
+    </div>
+    <div class="hint">搜尋會跨三大母類別比對所有子類別。</div>
+  </section>
+
+  <section id="home" class="view active">
+    <div class="head">
+      <h2>三大母類別</h2>
+      <p>先選擇你現在要處理的事情。</p>
+    </div>
+    <div class="parents" id="parentGrid"></div>
+  </section>
+
+  <section id="parentView" class="view">
+    <div class="detailtop">
+      <div>
+        <div class="crumb">首頁 / <span id="pcrumb"></span></div>
+        <h2 class="title" id="ptitle"></h2>
+        <p class="desc" id="pdesc"></p>
+      </div>
+      <button class="back" id="homeBtn">← 回三大類別</button>
+    </div>
+    <div class="children" id="childGrid"></div>
+  </section>
+
+  <section id="childView" class="view">
+    <div class="detailtop">
+      <div>
+        <div class="crumb">首頁 / <span id="ccrumb"></span></div>
+        <h2 class="title" id="ctitle"></h2>
+        <p class="desc" id="cdesc"></p>
+      </div>
+      <button class="back" id="backParent">← 回上一層</button>
+    </div>
+    <div id="childContent"></div>
+  </section>
+
+  <section id="searchView" class="view">
+    <div class="detailtop">
+      <div>
+        <div class="crumb">首頁 / 搜尋結果</div>
+        <h2 class="title">搜尋結果</h2>
+        <p class="desc" id="sdesc"></p>
+      </div>
+      <button class="back" id="searchHome">← 回首頁</button>
+    </div>
+    <div id="searchResults"></div>
+  </section>
+
+  <div class="footer">本頁內容依你提供的附件整理，已新增「訓練紀錄簿／錯誤範例」與「台灣適任證書／自行換證」兩個子類別。</div>
+</div>
+
+<div class="modal" id="modal">
+  <button id="modalClose">×</button>
+  <img id="modalImg" alt="附件放大預覽">
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
