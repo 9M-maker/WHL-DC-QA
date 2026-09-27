@@ -104,9 +104,8 @@ function openCategory(id){
   (c.topicIds || []).forEach(tid => {
     if(byId[tid]) list.appendChild(topicCard(byId[tid]));
   });
-    
+  }
   detailView.scrollIntoView({behavior:"smooth",block:"start"});
-}
 
 function goHome(){
   detailView.classList.remove("active");
