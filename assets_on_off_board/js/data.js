@@ -112,7 +112,7 @@ const topics = [
    <strong>E-LEARNING 網站</strong></a>
    或
    <a href="https://family.wanhai.com/index.jsp" target="_blank">
-   <strong>WHL FAMILY</strong> 進行通告課程閱讀。</a>
+   <strong>WHL FAMILY</strong></a> 進行通告課程閱讀。
    </p>`
 },
 {
