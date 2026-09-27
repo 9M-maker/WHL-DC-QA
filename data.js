@@ -118,8 +118,8 @@ const topics = [
  <tr><td>三副</td><td>黃俊諭 先生</td><td>6864</td></tr>
  <tr><td>水手長／木匠</td><td>葉祉妤 小姐</td><td>6865</td></tr>
  <tr><td>幹練水手／乙級水手</td><td>陳淑容 小姐</td><td>6866</td></tr>
- <tr><td>甲板實習生</td><td>李昱欣 小姐</td><td>6868</td></tr>
- <tr><td>甲板教育訓練</td><td>洪家芸 小姐</td><td>6867</td></tr>
+ <tr><td>甲板教育訓練</td><td>李昱欣 小姐</td><td>6868</td></tr>
+ <tr><td>甲板實習生</td><td>洪家芸 小姐</td><td>6867</td></tr>
  <tr><td>輪機長</td><td>柯婉蓉 小姐</td><td>6875</td></tr>
  <tr><td>大管</td><td>吳松哲 先生</td><td>6874</td></tr>
  <tr><td>二管</td><td>陳韋翰 先生</td><td>6877</td></tr>
