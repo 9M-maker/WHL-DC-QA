@@ -88,10 +88,23 @@ function openCategory(id){
   const list=document.getElementById("topicList");
   list.innerHTML="";
   const attachments=attachmentGallery(c);
+  
+  // 契約撰寫要點：先顯示文字版，再顯示圖片範例
+  
+  if(c.id === "contract-doc"){
+    (c.topicIds || []).forEach(tid => {
+    if(byId[tid]) list.appendChild(topicCard(byId[tid]));
+    });
   if(attachments) list.appendChild(attachments);
-  (c.topicIds || []).forEach(tid=>{
+
+}else{
+
+  // 其他分類維持原本順序
+  if(attachments) list.appendChild(attachments);
+  (c.topicIds || []).forEach(tid => {
     if(byId[tid]) list.appendChild(topicCard(byId[tid]));
   });
+    
   detailView.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
