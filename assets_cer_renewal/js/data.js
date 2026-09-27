@@ -56,7 +56,7 @@ const DATA = {
       "html": "<div class='scroll'><table><thead><tr><th>項目</th><th>重點</th></tr></thead><tbody><tr><td>訓練紀錄簿</td><td>可於實際滿 365 天前先寄；封面貼便利貼註明姓名與滿 365 天日期。</td></tr><tr><td>規費</td><td>新台幣 1,800 元現金：適任大證 800＋GMDSS 大證 800＋資歷證明規費 200。</td></tr><tr><td>台灣體檢表</td><td>正本 1 份，效期 1 年內；簽名欄記得簽，現職勾「航海員」。</td></tr><tr><td>航海人員考試及格證書</td><td>正本與影本各 1 份；不要提供成績單。</td></tr><tr><td>適任證書申請表</td><td>正本 2 張，依範例填寫並簽名。</td></tr><tr><td>辦理執照委託書</td><td>正本 1 張，依範例填寫並簽名。</td></tr><tr><td>船員服務經歷證明申請書</td><td>正本 1 張，正確填寫並簽名。</td></tr><tr><td>1 吋大頭照</td><td>4 張。</td></tr><tr><td>船員手冊影本</td><td>第一頁及最新資歷頁。</td></tr><tr><td>護照影本</td><td>第一頁至最後一個有出入境章頁面；目前在國輪上可不用提供。</td></tr></tbody></table></div><div class='note'>項目 2～10 建議整理在一個 L 型資料夾，連同訓練紀錄簿放入同一信封寄送。</div>",
       "imgs": [
         [
-          "assets/docs/taiwan/checklist.jpg",
+          "assets_cer_renewal/docs/taiwan/checklist.jpg",
           "應備資料檢查表"
         ]
       ]
@@ -70,7 +70,7 @@ const DATA = {
       "html": "<ul><li>提供正本 2 張。</li><li>請依範例正確填寫。</li><li>完成後簽名即可。</li></ul>",
       "imgs": [
         [
-          "assets/docs/taiwan/coc-form-sample.jpg",
+          "assets_cer_renewal/docs/taiwan/coc-form-sample.jpg",
           "(SAMPLE) 船員適任證書申請書"
         ]
       ]
@@ -84,7 +84,7 @@ const DATA = {
       "html": "<ul><li>提供正本 1 張。</li><li>請依範例正確填寫。</li><li>完成後簽名即可。</li></ul>",
       "imgs": [
         [
-          "assets/docs/taiwan/proxy-sample.jpg",
+          "assets_cer_renewal/docs/taiwan/proxy-sample.jpg",
           "(SAMPLE) 辦理執照委託書"
         ]
       ]
