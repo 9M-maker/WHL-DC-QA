@@ -56,7 +56,7 @@ const DATA = {
       "html": "<div class='scroll'><table><thead><tr><th>項目</th><th>重點</th></tr></thead><tbody><tr><td>訓練紀錄簿</td><td>可於實際滿 365 天前先寄；封面貼便利貼註明姓名與滿 365 天日期。</td></tr><tr><td>規費</td><td>新台幣 1,800 元現金：適任大證 800＋GMDSS 大證 800＋資歷證明規費 200。</td></tr><tr><td>台灣體檢表</td><td>正本 1 份，效期 1 年內；簽名欄記得簽，現職勾「航海員」。</td></tr><tr><td>航海人員考試及格證書</td><td>正本與影本各 1 份；不要提供成績單。</td></tr><tr><td>適任證書申請表</td><td>正本 2 張，依範例填寫並簽名。</td></tr><tr><td>辦理執照委託書</td><td>正本 1 張，依範例填寫並簽名。</td></tr><tr><td>船員服務經歷證明申請書</td><td>正本 1 張，正確填寫並簽名。</td></tr><tr><td>1 吋大頭照</td><td>4 張。</td></tr><tr><td>船員手冊影本</td><td>第一頁及最新資歷頁。</td></tr><tr><td>護照影本</td><td>第一頁至最後一個有出入境章頁面；目前在國輪上可不用提供。</td></tr></tbody></table></div><div class='note'>項目 2～10 建議整理在一個 L 型資料夾，連同訓練紀錄簿放入同一信封寄送。</div>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/taiwan/checklist.jpg",
+          "../assets_cer_renewal/docs/taiwan/checklist.jpg",
           "應備資料檢查表"
         ]
       ]
@@ -70,7 +70,7 @@ const DATA = {
       "html": "<ul><li>提供正本 2 張。</li><li>請依範例正確填寫。</li><li>完成後簽名即可。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/taiwan/coc-form-sample.jpg",
+          "../assets_cer_renewal/docs/taiwan/coc-form-sample.jpg",
           "(SAMPLE) 船員適任證書申請書"
         ]
       ]
@@ -84,7 +84,7 @@ const DATA = {
       "html": "<ul><li>提供正本 1 張。</li><li>請依範例正確填寫。</li><li>完成後簽名即可。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/taiwan/proxy-sample.jpg",
+          "../assets_cer_renewal/docs/taiwan/proxy-sample.jpg",
           "(SAMPLE) 辦理執照委託書"
         ]
       ]
@@ -98,7 +98,7 @@ const DATA = {
       "html": "<ul><li>提供正本 1 張。</li><li>請正確填寫各欄位。</li><li>完成後簽名即可。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/taiwan/service-record-sample.jpg",
+          "../assets_cer_renewal/docs/taiwan/service-record-sample.jpg",
           "船員服務經歷證明申請書｜表單預覽"
         ]
       ]
@@ -172,14 +172,14 @@ const DATA = {
       "title": "官方審查規定與範例",
       "short": "預覽航港局審查作業規定與 2A 操作級航行員範例。",
       "keywords": "航港局 官方 審查 2A 範例 PDF",
-      "html": "<p>以下可查看官方文件的預覽；GitHub 版本中也保留原始 PDF 可直接另開。</p><div class='file-actions'><a class='file-link' href='assets/docs/training/official-review-rules.pdf' target='_blank' rel='noopener'>開啟審查作業規定 PDF ↗</a><a class='file-link' href='assets/docs/training/official-sample-book.pdf' target='_blank' rel='noopener'>開啟 2A 範例 PDF ↗</a></div>",
+      "html": "<p>以下可查看官方文件的預覽；GitHub 版本中也保留原始 PDF 可直接另開。</p><div class='file-actions'><a class='file-link' href='../assets/docs/training/official-review-rules.pdf' target='_blank' rel='noopener'>開啟審查作業規定 PDF ↗</a><a class='file-link' href='../assets/docs/training/official-sample-book.pdf' target='_blank' rel='noopener'>開啟 2A 範例 PDF ↗</a></div>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/training/official-review-rules.jpg",
+          "../assets_cer_renewal/docs/training/official-review-rules.jpg",
           "船上訓練紀錄簿審查作業規定｜第 1 頁"
         ],
         [
-          "assets_cer_renewal/docs/training/official-sample-book.jpg",
+          "../assets_cer_renewal/docs/training/official-sample-book.jpg",
           "2A 操作級航行員訓練紀錄簿範例｜第 1 頁"
         ]
       ]
@@ -202,7 +202,7 @@ const DATA = {
       "html": "<div class='scroll'><table><thead><tr><th>項目</th><th>指定檔名</th><th>重點</th></tr></thead><tbody><tr><td>交通部體檢表</td><td>MED TW</td><td>PDF，不超過 1000KB；正反面都需掃描，效期至少 8 個月。</td></tr><tr><td>護照</td><td>PP</td><td>PDF，不超過 1000KB；需有簽名。</td></tr><tr><td>海員手冊</td><td>SMB</td><td>PDF，不超過 1000KB；第一頁到資歷頁都需掃描。</td></tr><tr><td>大頭照</td><td>PHOTO</td><td>JPG，不超過 50KB；小於 400×514 pixels。</td></tr><tr><td>台灣證書</td><td>TW GMDSS／TW COC</td><td>PDF 或 JPG，不超過 1000KB。</td></tr><tr><td>英文培訓證明</td><td>BASIC／FIRE／BOAT／FIRST AID／ECDIS／BRM／SSD／ARPA</td><td>PDF 或 JPG，不超過 1000KB；其中 BASIC/FIRE/BOAT/FIRST AID 培訓日期需在 4 年 5 個月內。</td></tr><tr><td>Application Form-SBTA</td><td>SBTA</td><td>填妥、英文簽名、日期押填寫當日。</td></tr><tr><td>IMDA GMDSS Form</td><td>IMDA</td><td>填妥、英文簽名、日期押填寫當日。</td></tr></tbody></table></div>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/singapore/document-list.jpg",
+          "../assets_cer_renewal/docs/singapore/document-list.jpg",
           "辦理新加坡證書應備文件總表"
         ]
       ]
@@ -216,7 +216,7 @@ const DATA = {
       "html": "<ul><li>依總表指定檔名，例如 MED TW、PP、SMB、BASIC、SBTA、IMDA。</li><li>附件要求在指定檔名後再加上自己的英文名字首，降低檔案混淆。</li><li>各檔案須符合 PDF/JPG 與大小限制。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/singapore/filename-rule.jpg",
+          "../assets_cer_renewal/docs/singapore/filename-rule.jpg",
           "檔名命名注意事項"
         ]
       ]
@@ -230,7 +230,7 @@ const DATA = {
       "html": "<ul><li>依範例填妥各欄位。</li><li>英文簽名。</li><li>日期填寫當日。</li><li>指定檔名：SBTA。</li><li>PDF 或 JPG，不超過 1000KB。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/singapore/sbta-sample.jpg",
+          "../assets_cer_renewal/docs/singapore/sbta-sample.jpg",
           "(SAMPLE) Application Form-SBTA"
         ]
       ]
@@ -244,7 +244,7 @@ const DATA = {
       "html": "<ul><li>依範例填妥各欄位。</li><li>英文簽名。</li><li>日期填寫當日。</li><li>指定檔名：IMDA。</li><li>PDF 或 JPG，不超過 1000KB。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/singapore/imda-gmdss-sample.jpg",
+          "../assets_cer_renewal/docs/singapore/imda-gmdss-sample.jpg",
           "(SAMPLE) IMDA GMDSS Form"
         ]
       ]
@@ -255,7 +255,7 @@ const DATA = {
       "title": "台灣證件掃描要求",
       "short": "MED TW、PP、SMB 改為展開式檢視，點開後才顯示 JPG。",
       "keywords": "MED TW PP SMB 體檢 護照 海員手冊 掃描",
-      "html": "\n<p>以下範例改為展開式檢視，點開後才會看到對應 JPG 預覽。</p>\n<div class=\"error-list\">\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">01</span><span>MED TW（交通部體檢表）</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\">\n      <p>體檢表正反面皆需掃描，效期至少 8 個月。</p>\n      <img src=\"assets/docs/singapore/med-tw-sample.jpg\" alt=\"MED TW 範例\" data-full=\"assets/docs/singapore/med-tw-sample.jpg\">\n    </div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">02</span><span>PP（護照）</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\">\n      <p>護照需有簽名，並符合附件要求。</p>\n      <img src=\"assets/docs/singapore/pp-sample.jpg\" alt=\"PP 範例\" data-full=\"assets/docs/singapore/pp-sample.jpg\">\n    </div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">03</span><span>SMB（海員手冊）</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\">\n      <p>海員手冊需從第一頁掃描到資歷頁。</p>\n      <img src=\"assets/docs/singapore/smb-sample.jpg\" alt=\"SMB 範例\" data-full=\"assets/docs/singapore/smb-sample.jpg\">\n    </div>\n  </details>\n</div>\n",
+      "html": "\n<p>以下範例改為展開式檢視，點開後才會看到對應 JPG 預覽。</p>\n<div class=\"error-list\">\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">01</span><span>MED TW（交通部體檢表）</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\">\n      <p>體檢表正反面皆需掃描，效期至少 8 個月。</p>\n      <img src=\"../assets/docs/singapore/med-tw-sample.jpg\" alt=\"MED TW 範例\" data-full=\"../assets/docs/singapore/med-tw-sample.jpg\">\n    </div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">02</span><span>PP（護照）</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\">\n      <p>護照需有簽名，並符合附件要求。</p>\n      <img src=\"../assets/docs/singapore/pp-sample.jpg\" alt=\"PP 範例\" data-full=\"../assets/docs/singapore/pp-sample.jpg\">\n    </div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">03</span><span>SMB（海員手冊）</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\">\n      <p>海員手冊需從第一頁掃描到資歷頁。</p>\n      <img src=\"../assets/docs/singapore/smb-sample.jpg\" alt=\"SMB 範例\" data-full=\"../assets/docs/singapore/smb-sample.jpg\">\n    </div>\n  </details>\n</div>\n",
       "imgs": []
     },
     {
@@ -264,7 +264,7 @@ const DATA = {
       "title": "台灣證書與英文培訓證明",
       "short": "TW GMDSS、TW COC 與各英文培訓證明改為展開式檢視。",
       "keywords": "TW GMDSS TW COC BASIC FIRE BOAT FIRST AID ECDIS BRM SSD ARPA",
-      "html": "\n<p>以下依文件類型整理為展開式檢視，點開後才會看到對應 JPG 範例。</p>\n<div class=\"note\">BASIC／FIRE／BOAT／FIRST AID 的培訓日期須在 4 年 5 個月內；其餘仍請依附件要求送件。</div>\n<div class=\"error-list\">\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">01</span><span>TW GMDSS</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/tw-gmdss.jpg\" alt=\"TW GMDSS\" data-full=\"assets/docs/singapore/tw-gmdss.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">02</span><span>TW COC</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/tw-coc.jpg\" alt=\"TW COC\" data-full=\"assets/docs/singapore/tw-coc.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">03</span><span>BASIC</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/basic.jpg\" alt=\"BASIC\" data-full=\"assets/docs/singapore/basic.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">04</span><span>FIRE</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/fire.jpg\" alt=\"FIRE\" data-full=\"assets/docs/singapore/fire.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">05</span><span>BOAT</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/boat.jpg\" alt=\"BOAT\" data-full=\"assets/docs/singapore/boat.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">06</span><span>FIRST AID</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/first-aid.jpg\" alt=\"FIRST AID\" data-full=\"assets/docs/singapore/first-aid.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">07</span><span>ECDIS</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/ecdis.jpg\" alt=\"ECDIS\" data-full=\"assets/docs/singapore/ecdis.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">08</span><span>BRM</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/brm.jpg\" alt=\"BRM\" data-full=\"assets/docs/singapore/brm.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">09</span><span>SSD</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/ssd.jpg\" alt=\"SSD\" data-full=\"assets/docs/singapore/ssd.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">10</span><span>ARPA</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"assets/docs/singapore/arpa.jpg\" alt=\"ARPA\" data-full=\"assets/docs/singapore/arpa.jpg\"></div>\n  </details>\n</div>\n",
+      "html": "\n<p>以下依文件類型整理為展開式檢視，點開後才會看到對應 JPG 範例。</p>\n<div class=\"note\">BASIC／FIRE／BOAT／FIRST AID 的培訓日期須在 4 年 5 個月內；其餘仍請依附件要求送件。</div>\n<div class=\"error-list\">\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">01</span><span>TW GMDSS</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"../assets/docs/singapore/tw-gmdss.jpg\" alt=\"TW GMDSS\" data-full=\"../assets/docs/singapore/tw-gmdss.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">02</span><span>TW COC</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"../assets/docs/singapore/tw-coc.jpg\" alt=\"TW COC\" data-full=\"../assets/docs/singapore/tw-coc.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">03</span><span>BASIC</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"../assets/docs/singapore/basic.jpg\" alt=\"BASIC\" data-full=\"../assets/docs/singapore/basic.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">04</span><span>FIRE</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"../assets/docs/singapore/fire.jpg\" alt=\"FIRE\" data-full=\"../assets/docs/singapore/fire.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">05</span><span>BOAT</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"../assets/docs/singapore/boat.jpg\" alt=\"BOAT\" data-full=\"../assets/docs/singapore/boat.jpg\"></div>\n  </details>\n  <details class=\"error-item\">\n    <summary><span class=\"error-no\">06</span><span>FIRST AID</span><span class=\"error-arrow\">⌄</span></summary>\n    <div class=\"error-preview\"><img src=\"../assets/docs/singapore/first-aid.jpg\" alt=\"";
       "imgs": []
     },
     {
@@ -276,7 +276,7 @@ const DATA = {
       "html": "<ul><li>若曾在其他航商船舶實習，附件要求在 e-mail 內文另提供英文船名、船籍、IMO No.、Official No.。</li><li>每項資料存成一個檔案後，備妥整包寄送承辦端。</li><li>後續仍需等待公司及新加坡端辦理與通知。</li></ul>",
       "imgs": [
         [
-          "assets_cer_renewal/docs/singapore/non-wanhai-internship.jpg",
+          "../assets_cer_renewal/docs/singapore/non-wanhai-internship.jpg",
           "曾在非萬海船實習注意事項"
         ]
       ]
