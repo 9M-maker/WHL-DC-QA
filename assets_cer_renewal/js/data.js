@@ -331,13 +331,45 @@ const DATA = {
       ]
     },
     {
-      "id": "sg_download",
-      "parent": "sg",
-      "title": "空白表單下載",
-      "short": "預留 SBTA 與 IMDA GMDSS 空白表單連結。",
-      "keywords": "空白表單 下載 SBTA IMDA",
-      "html": "<div class='downloads'><div class='drow'><div><h4>Application Form-SBTA</h4><p>空白 PDF 下載網址</p></div><span class='placeholder'>請自行填入連結</span></div><div class='drow'><div><h4>IMDA GMDSS Form</h4><p>空白 PDF 下載網址</p></div><span class='placeholder'>請自行填入連結</span></div></div>",
-      "imgs": []
-    }
+  "id": "sg_download",
+  "parent": "sg",
+  "title": "空白表單下載",
+  "short": "下載 SBTA 與 IMDA GMDSS 空白表單。",
+  "keywords": "空白表單 下載 SBTA IMDA",
+  "html": `
+    <div class="downloads">
+
+      <div class="drow">
+        <div>
+          <h4>Application Form-SBTA</h4>
+          <p>空白 PDF 表單</p>
+        </div>
+        <a
+          class="download-btn"
+          href="../assets_cer_renewal/docs/singapore/Application Form-SBTA.pdf"
+          download
+        >
+          點擊下載表單
+        </a>
+      </div>
+
+      <div class="drow">
+        <div>
+          <h4>IMDA GMDSS Form</h4>
+          <p>空白 PDF 表單</p>
+        </div>
+        <a
+          class="download-btn"
+          href="../assets_cer_renewal/docs/singapore/IMDA GMDSS form.pdf"
+          download
+        >
+          點擊下載表單
+        </a>
+      </div>
+
+    </div>
+  `,
+  "imgs": []
+},
   ]
 };
