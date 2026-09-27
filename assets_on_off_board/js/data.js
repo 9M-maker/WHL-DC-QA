@@ -146,7 +146,7 @@ const topics = [
  <tr><td>三副</td><td>黃 先生</td><td>6864</td></tr>
  <tr><td>水手長／木匠</td><td>葉 小姐</td><td>6865</td></tr>
  <tr><td>幹練水手／乙級水手</td><td>陳 小姐</td><td>6866</td></tr>
- <tr><td>甲板教育訓練/甲板實習生</td><td>李 小姐</td><td>6868</td></tr>
+ <tr><td>甲板教育訓練</td><td>李 小姐</td><td>6868</td></tr>
  <tr><td>甲板教育訓練/甲板實習生</td><td>洪 小姐</td><td>6867</td></tr>
  <tr><td>輪機長</td><td>柯 小姐</td><td>6875</td></tr>
  <tr><td>大管</td><td>吳 先生</td><td>6874</td></tr>
@@ -155,7 +155,7 @@ const topics = [
  <tr><td>加油長／銅匠／機匠／副機匠</td><td>楊 小姐</td><td>6872</td></tr>
  <tr><td>大廚</td><td>林 小姐</td><td>6873</td></tr>
  <tr><td>機艙教育訓練/機艙實習生</td><td>劉 先生</td><td>6878</td></tr>
- <tr><td>機艙教育訓練/機艙實習生</td><td>劉 小姐</td><td>6879</td></tr>
+ <tr><td>機艙教育訓練</td><td>劉 小姐</td><td>6879</td></tr>
  </tbody></table></div>`
 },
 {
@@ -163,7 +163,7 @@ const topics = [
  keywords:"僱傭契約 國輪 外輪 騎縫章 附錄 體檢表 黃皮書 黃熱病 疫苗 證件 證書 有效期限 一年 2吋 照片",
  html:`<ol>
  <li><strong>僱傭契約：</strong>國輪僱傭契約書 4 份、外輪僱傭契約書 2 份；依範例填寫，簽名或蓋章處加蓋私章。國輪 4 份需蓋契約騎縫章；2 張「台灣船員定期僱傭契約附錄」請簽名。</li>
- <li><strong>體檢表：</strong>請參閱「台籍船員體檢表注意事項」。</li>
+ <li><strong>體檢表：</strong>請參閱<a href='#' onclick=\"openChild('medical_guide'); return false;\">「台籍船員體檢表注意事項」。</li>
  <li><strong>黃皮書：</strong>務必完成黃熱病疫苗注射，效期應為無限期。</li>
  <li><strong>證件效期：</strong>所有證件、證書、上船文件、體檢表等，有效期限皆至少一年以上，並不得在船上換發（實習生換發適任證書除外）。</li>
  <li><strong>照片：</strong>請隨身攜帶半年內 2 吋近照 4 張。</li>
