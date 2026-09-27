@@ -107,7 +107,13 @@ const topics = [
 {
  id:"notice", title:"公司通告研讀", source:"附件第 1 頁",
  keywords:"E-LEARNING WHL FAMILY 通告 課程 在岸",
- html:`<p>在岸期間請至 <strong>E-LEARNING</strong> 網站或 <strong>WHL FAMILY</strong> 進行通告課程閱讀。</p>`
+ html:`<p>在岸期間請至 
+   <a href="https://wanhai.elearn.com.tw/cltcms/unlogin-action.do?go=https%3A%2F%2Fwanhai.elearn.com.tw%2Fcltcms%2Fctms.do&userSignOut=true" target="_blank">
+   <strong>E-LEARNING 網站</strong></a>
+   或 
+   <a href="https://family.wanhai.com/index.jsp" target="_blank">
+   <strong>WHL FAMILY</strong> 進行通告課程閱讀。</a>
+   </p>`
 },
 {
  id:"passport", title:"船員手冊及護照保管事宜", source:"附件第 1 頁",
