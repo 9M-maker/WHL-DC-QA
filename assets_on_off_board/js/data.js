@@ -25,9 +25,9 @@ const categories = [
     desc:"契約填寫範例、簽章與寄回注意事項",
     topicIds:["contract-writing"],
     attachments:[
-      {src:"assets/docs/contract/contract-01.jpg", label:"契約撰寫範例｜第 1 頁"},
-      {src:"assets/docs/contract/contract-02.jpg", label:"契約撰寫範例｜第 2 頁"},
-      {src:"assets/docs/contract/contract-03.jpg", label:"預寄船員定期僱傭契約文件說明｜第 3 頁"}
+      {src:"assets_on_off_board/docs/contract/contract-01.jpg", label:"契約撰寫範例｜第 1 頁"},
+      {src:"assets_on_off_board/docs/contract/contract-02.jpg", label:"契約撰寫範例｜第 2 頁"},
+      {src:"assets_on_off_board/docs/contract/contract-03.jpg", label:"預寄船員定期僱傭契約文件說明｜第 3 頁"}
     ]
   },
   {
@@ -37,7 +37,7 @@ const categories = [
     desc:"體檢醫院、檢測項目、填寫與繳交方式",
     topicIds:["medical-guide"],
     attachments:[
-      {src:"assets/docs/medical/medical-01.jpg", label:"台籍船員體檢表注意事項｜第 1 頁"}
+      {src:"assets_on_off_board/docs/medical/medical-01.jpg", label:"台籍船員體檢表注意事項｜第 1 頁"}
     ]
   },
   {
