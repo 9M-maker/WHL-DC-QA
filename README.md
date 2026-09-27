@@ -167,3 +167,23 @@ assets/css/styles.css
 通常直接雙擊 `index.html` 即可。若瀏覽器有限制，也可在 VS Code 安裝 Live Server 後開啟。
 
 此專案沒有外部 JavaScript 套件，也沒有 API 金鑰，因此部署後不會產生額外 API 費用。
+
+# 本次新增
+- 訓練紀錄簿 → 錯誤範例
+- 台灣適任證書（大證）申請 → 自行換證
+
+## 常改檔案
+- assets/js/data.js：分類、說明文字、下載連結、附件路徑
+- assets/css/styles.css：版面與配色
+- index.html：首頁文字
+
+## 部署
+把整個資料夾上傳到 GitHub repository 根目錄後，到 Settings → Pages 開啟 GitHub Pages。
+
+## v3 調整
+- 訓練紀錄簿「錯誤範例」改為條列折疊選單。
+- 僅依附件編碼 1～10 排列，展開後才顯示 JPG。
+
+## v4 調整
+- 新加坡各項證明文件範例改為展開式預覽。
+- 包含：MED TW、PP、SMB、TW GMDSS、TW COC、BASIC、FIRE、BOAT、FIRST AID、ECDIS、BRM、SSD、ARPA。
