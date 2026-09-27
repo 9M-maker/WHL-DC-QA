@@ -106,7 +106,7 @@ function openCategory(id){
   });
   }
   detailView.scrollIntoView({behavior:"smooth",block:"start"});
-
+}
 function goHome(){
   detailView.classList.remove("active");
   searchView.classList.remove("active");
