@@ -31,8 +31,8 @@ button,input{font:inherit}
 .brand{display:flex;align-items:center;gap:11px;font-weight:850;color:var(--navy)}
 .logo{
   width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#fff;
-  background:linear-gradient(135deg,var(--navy),var(--teal));
-  box-shadow:0 8px 18px rgba(21,63,96,.22)
+  background:none;
+  box-shadow:none
 }
 .ver{
   font-size:12px;color:var(--muted);background:#fff;border:1px solid var(--line);
