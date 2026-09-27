@@ -81,7 +81,6 @@ function renderMailingInfo(){
   addressCard.className = "card";
   addressCard.innerHTML = `
     <div class="label">公司地址</div>
-    <h2>寄送地址</h2>
     <div class="address">${MAILING_DATA.companyAddress}</div>
   `;
   addressCard.appendChild(
