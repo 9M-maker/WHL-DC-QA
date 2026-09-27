@@ -18,7 +18,7 @@ const DATA = {
       "id": "training",
       "icon": "📒",
       "title": "訓練紀錄簿撰寫注意事項",
-      "desc": "從第一條船開始填寫，到滿 365 日後送審，並新增常見錯誤範例可直接預覽。",
+      "desc": "從第一條船開始填寫，到滿 365 日後送審，請務必閱讀常見錯誤範例。",
       "children": [
         "tr_start",
         "tr_sign",
@@ -98,7 +98,7 @@ const DATA = {
       "html": "<ul><li>提供正本 1 張。</li><li>請正確填寫各欄位。</li><li>完成後簽名即可。</li></ul>",
       "imgs": [
         [
-          "assets/docs/taiwan/service-record-sample.jpg",
+          "assets_cer_renewal/docs/taiwan/service-record-sample.jpg",
           "船員服務經歷證明申請書｜表單預覽"
         ]
       ]
@@ -175,11 +175,11 @@ const DATA = {
       "html": "<p>以下可查看官方文件的預覽；GitHub 版本中也保留原始 PDF 可直接另開。</p><div class='file-actions'><a class='file-link' href='assets/docs/training/official-review-rules.pdf' target='_blank' rel='noopener'>開啟審查作業規定 PDF ↗</a><a class='file-link' href='assets/docs/training/official-sample-book.pdf' target='_blank' rel='noopener'>開啟 2A 範例 PDF ↗</a></div>",
       "imgs": [
         [
-          "assets/docs/training/official-review-rules.jpg",
+          "assets_cer_renewal/docs/training/official-review-rules.jpg",
           "船上訓練紀錄簿審查作業規定｜第 1 頁"
         ],
         [
-          "assets/docs/training/official-sample-book.jpg",
+          "assets_cer_renewal/docs/training/official-sample-book.jpg",
           "2A 操作級航行員訓練紀錄簿範例｜第 1 頁"
         ]
       ]
@@ -190,7 +190,7 @@ const DATA = {
       "title": "錯誤範例",
       "short": "常見錯誤依編碼 1～10 排列；點選條目後才顯示 JPG 預覽。",
       "keywords": "錯誤範例 常漏資訊 1 2 3 4 5 6 7 8 9 10 簽名 船名 救生艇 絞纜機 淡水艙 夏季乾舷 日期 船長",
-      "html": "\n<p>以下依附件編碼 <strong>1～10</strong> 排列。預設收合，點選項目後才會顯示 JPG 錯誤範例。</p>\n<div class=\"error-list\">\n\n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">01</span>\n        <span>沒列出簽名人姓名</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-01.jpg\" alt=\"錯誤案例 1：沒列出簽名人姓名\" data-full=\"assets/docs/training/errors/case-01.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">02</span>\n        <span>沒有填船名</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-02.jpg\" alt=\"錯誤案例 2：沒有填船名\" data-full=\"assets/docs/training/errors/case-02.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">03</span>\n        <span>救生艇資訊沒有填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-03.jpg\" alt=\"錯誤案例 3：救生艇資訊沒有填\" data-full=\"assets/docs/training/errors/case-03.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">04</span>\n        <span>救生艇類型沒有填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-04.jpg\" alt=\"錯誤案例 4：救生艇類型沒有填\" data-full=\"assets/docs/training/errors/case-04.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">05</span>\n        <span>絞纜機資訊漏填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-05.jpg\" alt=\"錯誤案例 5：絞纜機資訊漏填\" data-full=\"assets/docs/training/errors/case-05.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">06</span>\n        <span>淡水艙資訊漏填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-06.jpg\" alt=\"錯誤案例 6：淡水艙資訊漏填\" data-full=\"assets/docs/training/errors/case-06.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">07</span>\n        <span>夏季乾舷資訊漏填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-07.jpg\" alt=\"錯誤案例 7：夏季乾舷資訊漏填\" data-full=\"assets/docs/training/errors/case-07.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">08</span>\n        <span>簽名日期沒有年份</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-08.jpg\" alt=\"錯誤案例 8：簽名日期沒有年份\" data-full=\"assets/docs/training/errors/case-08.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">09</span>\n        <span>船長簽名沒有日期</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-09.jpg\" alt=\"錯誤案例 9：船長簽名沒有日期\" data-full=\"assets/docs/training/errors/case-09.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">10</span>\n        <span>簽名者不是辦證當下的船長</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-10.jpg\" alt=\"錯誤案例 10：簽名者不是辦證當下的船長\" data-full=\"assets/docs/training/errors/case-10.jpg\">\n      </div>\n    </details>\n    \n</div>\n",
+      "html": "\n<p>以下依附件編碼 <strong>1-10</strong> 排列。預設收合，點選項目後才會顯示 JPG 錯誤範例。</p>\n<div class=\"error-list\">\n\n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">01</span>\n        <span>沒列出簽名人姓名</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-01.jpg\" alt=\"錯誤案例 1：沒列出簽名人姓名\" data-full=\"assets/docs/training/errors/case-01.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">02</span>\n        <span>沒有填船名</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-02.jpg\" alt=\"錯誤案例 2：沒有填船名\" data-full=\"assets/docs/training/errors/case-02.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">03</span>\n        <span>救生艇資訊沒有填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-03.jpg\" alt=\"錯誤案例 3：救生艇資訊沒有填\" data-full=\"assets/docs/training/errors/case-03.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">04</span>\n        <span>救生艇類型沒有填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-04.jpg\" alt=\"錯誤案例 4：救生艇類型沒有填\" data-full=\"assets/docs/training/errors/case-04.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">05</span>\n        <span>絞纜機資訊漏填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-05.jpg\" alt=\"錯誤案例 5：絞纜機資訊漏填\" data-full=\"assets/docs/training/errors/case-05.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">06</span>\n        <span>淡水艙資訊漏填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-06.jpg\" alt=\"錯誤案例 6：淡水艙資訊漏填\" data-full=\"assets/docs/training/errors/case-06.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">07</span>\n        <span>夏季乾舷資訊漏填</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-07.jpg\" alt=\"錯誤案例 7：夏季乾舷資訊漏填\" data-full=\"assets/docs/training/errors/case-07.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">08</span>\n        <span>簽名日期沒有年份</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-08.jpg\" alt=\"錯誤案例 8：簽名日期沒有年份\" data-full=\"assets/docs/training/errors/case-08.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">09</span>\n        <span>船長簽名沒有日期</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-09.jpg\" alt=\"錯誤案例 9：船長簽名沒有日期\" data-full=\"assets/docs/training/errors/case-09.jpg\">\n      </div>\n    </details>\n    \n    <details class=\"error-item\">\n      <summary>\n        <span class=\"error-no\">10</span>\n        <span>簽名者不是辦證當下的船長</span>\n        <span class=\"error-arrow\">⌄</span>\n      </summary>\n      <div class=\"error-preview\">\n        <p>點擊圖片可放大檢視。</p>\n        <img src=\"assets/docs/training/errors/case-10.jpg\" alt=\"錯誤案例 10：簽名者不是辦證當下的船長\" data-full=\"assets/docs/training/errors/case-10.jpg\">\n      </div>\n    </details>\n    \n</div>\n",
       "imgs": []
     },
     {
@@ -202,7 +202,7 @@ const DATA = {
       "html": "<div class='scroll'><table><thead><tr><th>項目</th><th>指定檔名</th><th>重點</th></tr></thead><tbody><tr><td>交通部體檢表</td><td>MED TW</td><td>PDF，不超過 1000KB；正反面都需掃描，效期至少 8 個月。</td></tr><tr><td>護照</td><td>PP</td><td>PDF，不超過 1000KB；需有簽名。</td></tr><tr><td>海員手冊</td><td>SMB</td><td>PDF，不超過 1000KB；第一頁到資歷頁都需掃描。</td></tr><tr><td>大頭照</td><td>PHOTO</td><td>JPG，不超過 50KB；小於 400×514 pixels。</td></tr><tr><td>台灣證書</td><td>TW GMDSS／TW COC</td><td>PDF 或 JPG，不超過 1000KB。</td></tr><tr><td>英文培訓證明</td><td>BASIC／FIRE／BOAT／FIRST AID／ECDIS／BRM／SSD／ARPA</td><td>PDF 或 JPG，不超過 1000KB；其中 BASIC/FIRE/BOAT/FIRST AID 培訓日期需在 4 年 5 個月內。</td></tr><tr><td>Application Form-SBTA</td><td>SBTA</td><td>填妥、英文簽名、日期押填寫當日。</td></tr><tr><td>IMDA GMDSS Form</td><td>IMDA</td><td>填妥、英文簽名、日期押填寫當日。</td></tr></tbody></table></div>",
       "imgs": [
         [
-          "assets/docs/singapore/document-list.jpg",
+          "assets_cer_renewal/docs/singapore/document-list.jpg",
           "辦理新加坡證書應備文件總表"
         ]
       ]
@@ -216,7 +216,7 @@ const DATA = {
       "html": "<ul><li>依總表指定檔名，例如 MED TW、PP、SMB、BASIC、SBTA、IMDA。</li><li>附件要求在指定檔名後再加上自己的英文名字首，降低檔案混淆。</li><li>各檔案須符合 PDF/JPG 與大小限制。</li></ul>",
       "imgs": [
         [
-          "assets/docs/singapore/filename-rule.jpg",
+          "assets_cer_renewal/docs/singapore/filename-rule.jpg",
           "檔名命名注意事項"
         ]
       ]
@@ -230,7 +230,7 @@ const DATA = {
       "html": "<ul><li>依範例填妥各欄位。</li><li>英文簽名。</li><li>日期填寫當日。</li><li>指定檔名：SBTA。</li><li>PDF 或 JPG，不超過 1000KB。</li></ul>",
       "imgs": [
         [
-          "assets/docs/singapore/sbta-sample.jpg",
+          "assets_cer_renewal/docs/singapore/sbta-sample.jpg",
           "(SAMPLE) Application Form-SBTA"
         ]
       ]
@@ -244,7 +244,7 @@ const DATA = {
       "html": "<ul><li>依範例填妥各欄位。</li><li>英文簽名。</li><li>日期填寫當日。</li><li>指定檔名：IMDA。</li><li>PDF 或 JPG，不超過 1000KB。</li></ul>",
       "imgs": [
         [
-          "assets/docs/singapore/imda-gmdss-sample.jpg",
+          "assets_cer_renewal/docs/singapore/imda-gmdss-sample.jpg",
           "(SAMPLE) IMDA GMDSS Form"
         ]
       ]
@@ -276,7 +276,7 @@ const DATA = {
       "html": "<ul><li>若曾在其他航商船舶實習，附件要求在 e-mail 內文另提供英文船名、船籍、IMO No.、Official No.。</li><li>每項資料存成一個檔案後，備妥整包寄送承辦端。</li><li>後續仍需等待公司及新加坡端辦理與通知。</li></ul>",
       "imgs": [
         [
-          "assets/docs/singapore/non-wanhai-internship.jpg",
+          "assets_cer_renewal/docs/singapore/non-wanhai-internship.jpg",
           "曾在非萬海船實習注意事項"
         ]
       ]
