@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="萬海船員資訊平台主選單" />
+  <title>萬海船員資訊平台</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --paper: #ffffff;
+      --ink: #1d2a36;
+      --muted: #6f7c87;
+      --line: #dce3e8;
+      --accent: #1f5f76;
+      --accent-soft: #eaf2f5;
+      --shadow: 0 12px 30px rgba(24, 45, 58, 0.07);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(255,255,255,.74), rgba(255,255,255,.74)),
+        repeating-linear-gradient(
+          0deg,
+          transparent 0,
+          transparent 31px,
+          rgba(31,95,118,.025) 32px
+        ),
+        var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 34px 0 56px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .brand-mark {
+      width: 30px;
+      height: 30px;
+      border: 1.5px solid var(--accent);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .brand-mark::before,
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      background: var(--accent);
+    }
+
+    .brand-mark::before { width: 14px; height: 1.5px; }
+    .brand-mark::after { width: 1.5px; height: 14px; }
+
+    .top-note {
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: .06em;
+    }
+
+    .hero {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 54px 56px 48px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -80px;
+      top: -95px;
+      border: 1px solid rgba(31,95,118,.16);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.16;
+      letter-spacing: -.03em;
+    }
+
+    .hero p {
+      margin: 18px 0 0;
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 44px 2px 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 18px;
+      letter-spacing: .04em;
+    }
+
+    .section-head span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .menu-card {
+      min-height: 150px;
+      padding: 18px 20px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .menu-card:hover,
+    .menu-card:focus-visible {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: rgba(31,95,118,.36);
+      outline: none;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: var(--accent-soft);
+    }
+
+    .icon svg {
+      width: 19px;
+      height: 19px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .arrow {
+      font-size: 20px;
+      color: #94a1aa;
+      transition: transform .18s ease, color .18s ease;
+    }
+
+    .menu-card:hover .arrow { transform: translateX(3px); color: var(--accent); }
+
+    .menu-card h3 {
+      margin: 15px 0 4px;
+      font-size: 18px;
+      letter-spacing: .02em;
+    }
+
+    .menu-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .footer {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .hero { padding: 44px 34px 40px; }
+      .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 28px, 1120px); padding-top: 20px; }
+      .topbar { margin-bottom: 18px; }
+      .top-note { display: none; }
+      .hero { padding: 34px 24px 30px; border-radius: 20px; }
+      .hero p { font-size: 15px; }
+      .section-head { margin-top: 32px; }
+      .section-head span { display: none; }
+      .menu-grid { grid-template-columns: 1fr; gap: 12px; }
+      .menu-card { min-height: 126px; padding: 15px 17px; border-radius: 17px; }
+      .menu-card h3 { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="回到主選單">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>CREW INFO</span>
+      </a>
+      <div class="top-note">船員資訊快速入口</div>
+    </div>
+
+    <section class="hero">
+      <div class="eyebrow">CREW INFORMATION PORTAL</div>
+      <h1>萬海船員資訊平台</h1>
+      <p>請選擇需要查詢的項目。各功能可連結至既有網頁、PDF 預覽頁、Microsoft Forms 或其他指定網址。</p>
+    </section>
+
+    <div class="section-head">
+      <h2>主選單</h2>
+      <span>選擇項目後前往對應頁面</span>
+    </div>
+
+    <section class="menu-grid" aria-label="船員資訊主選單">
+      <a class="menu-card" href="crew-guide.html">
+        <div class="card-top">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5"/><path d="M8 13h8M8 17h6"/></svg>
+          </span>
+          <span class="arrow">→</span>
+        </div>
+        <div><h3>上下船注意事項</h3><p>文件、流程與上／下船前後注意事項。</p></div>
+      </a>
+
+      <a class="menu-card" href="certificate.html">
+        <div class="card-top">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13 7 21l5-2 5 2-1.5-8"/></svg>
+          </span>
+          <span class="arrow">→</span>
+        </div>
+        <div><h3>換證資訊</h3><p>查詢換證所需文件、申請方式與相關提醒。</p></div>
+      </a>
+
+      <a class="menu-card" href="shipping.html">
+        <div class="card-top">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 6h13v11H3z"/><path d="M16 9h3l2 3v5h-5z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          </span>
+          <span class="arrow">→</span>
+        </div>
+        <div><h3>寄件資訊</h3><p>公司地址、收件人與證件寄送相關資訊。</p></div>
+      </a>
+
+      <a class="menu-card" href="training.html">
+        <div class="card-top">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v15H4z"/><path d="M8 3v4M16 3v4M4 9h16"/><path d="M8 13h3M8 16h5"/></svg>
+          </span>
+          <span class="arrow">→</span>
+        </div>
+        <div><h3>證書開班資訊</h3><p>證書訓練、開班日期與報名資訊。</p></div>
+      </a>
+
+      <a class="menu-card" href="feedback.html">
+        <div class="card-top">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
+          </span>
+          <span class="arrow">↗</span>
+        </div>
+        <div><h3>船員意見表</h3><p>連結至指定意見表或 Microsoft Forms。</p></div>
+      </a>
+
+      <a class="menu-card" href="links.html">
+        <div class="card-top">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>
+          </span>
+          <span class="arrow">→</span>
+        </div>
+        <div><h3>常用連結</h3><p>集中放置其他常用系統、表單與網站入口。</p></div>
+      </a>
+    </section>
+
+    <footer class="footer">Crew Information Portal · Internal Use</footer>
+  </main>
+</body>
+</html>
