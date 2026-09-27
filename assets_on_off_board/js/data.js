@@ -397,7 +397,13 @@ const topics = [
  id:"medical-guide", title:"台籍船員體檢注意事項", source:"體檢注意事項附件第 1 頁",
  keywords:"體檢 健康檢查 港務局 船員體格證明書 新加坡體檢表 公立醫院 教學醫院 裸視 矯正視力 GOT GPT 腰圍 大廚 阿米巴 大腸桿菌 A型肝炎 一式三份 正本 Normal Fit For Duty 英文簽名 三個月 2000 Taiwan R.O.C",
  html:`<ol>
- <li>請使用公司寄發之交通部港務局船員體格證明書及新加坡體檢表，至<strong>公立醫院或教學醫院</strong>體檢。</li>
+ <li>請使用公司寄發之交通部港務局船員體格證明書及新加坡體檢表，至<strong>公立醫院或教學醫院</strong>體檢。
+    <ul>
+      <li><strong>北部地區醫院參考：</strong>衛生福利部基隆醫院、基隆市立醫院、新北市立聯合醫院</li>
+      <li><strong>中部地區醫院參考：</strong>臺中榮民總醫院、衛生福利部台中醫院</li>
+      <li><strong>南部地區醫院參考：</strong>高雄市小港醫院、高雄市立民生醫院</li>
+    </ul>
+ </li>
  <li><strong>必要檢測：</strong>裸視、矯正後視力、肝功能指數 GOT／GPT、腰圍；大廚另須加作阿米巴原蟲（AMOEBA）、大腸桿菌（桿菌性痢疾）及 A 型肝炎。</li>
  <li>交通部與新加坡體檢表<strong>各一式三份且皆須正本</strong>：各一份繳回船員課，各帶兩份上船時交給船長。</li>
  <li>體檢結果以英文 <strong>Normal</strong> 填寫，檢驗結果欄須蓋 <strong>Fit For Duty</strong> 戳章。</li>
