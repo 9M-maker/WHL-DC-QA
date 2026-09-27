@@ -32,7 +32,7 @@ button,input{font:inherit}
 .logo{
   width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#fff;
   background:none;
-  box-shadow:none
+  box-shadow:none;
 }
 .ver{
   font-size:12px;color:var(--muted);background:#fff;border:1px solid var(--line);
