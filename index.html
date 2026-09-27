@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>船員行前助手｜分類查詢版</title>
+<!-- GitHub Pages 靜態版：內容請改 assets/js/data.js；Q&A 同義詞請改 assets/js/qa-config.js -->
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand"><div class="logo">⚓</div><div>船員行前助手</div></div>
+    <div class="ver">2026/09/10 版</div>
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">CREW QUICK GUIDE</div>
+    <h1>先選分類，再看細項。</h1>
+    <p>把原本 5 頁文件整理成 8 個大分類。第一次使用可直接點分類；知道要找什麼時，也能直接搜尋關鍵字。</p>
+    <div class="search">
+      <input id="searchInput" placeholder="例如：護照、STCW、高鐵、勞健保、TOEIC…">
+      <button id="searchBtn">搜尋</button>
+    </div>
+    <div class="hint">搜尋會跨全部分類比對，不需要先進入某一分類。</div>
+  </section>
+
+  <section id="homeView">
+    <div class="home-head">
+      <div>
+        <h2>8 個常用分類</h2>
+        <p>依新進船員最常遇到的情境重新分組。</p>
+      </div>
+      <button class="small-btn" id="openAllBtn">展開全部主題</button>
+    </div>
+    <div class="categories" id="categories"></div>
+  </section>
+
+  <section class="detail-view" id="detailView">
+    <div class="detail-top">
+      <div>
+        <div class="breadcrumb">首頁 / <span id="detailBreadcrumb"></span></div>
+        <h2 class="detail-title" id="detailTitle"></h2>
+        <p class="detail-desc" id="detailDesc"></p>
+      </div>
+      <button class="back-btn" id="backBtn">← 回分類首頁</button>
+    </div>
+    <div class="topic-list" id="topicList"></div>
+  </section>
+
+  <section class="search-view" id="searchView">
+    <div class="detail-top">
+      <div>
+        <div class="breadcrumb">首頁 / 搜尋結果</div>
+        <h2 class="detail-title">搜尋結果</h2>
+        <p class="detail-desc" id="searchSummary"></p>
+      </div>
+      <button class="back-btn" id="searchBackBtn">← 回分類首頁</button>
+    </div>
+    <div class="topic-list" id="searchResults"></div>
+  </section>
+
+  <section class="qa">
+    <h2>快速 Q&A</h2>
+    <p>可直接用一句話問，系統會從本頁資料找最相關的內容。</p>
+    <div class="qa-row">
+      <input id="question" placeholder="例如：國外下船後護照幾天內要寄回？">
+      <button id="askBtn">找答案</button>
+    </div>
+    <div class="answer" id="answer">可詢問：請假要提前幾天、高鐵怎麼報銷、TOEIC 860 分有什麼獎勵等。</div>
+  </section>
+
+  <div class="footer">
+    本頁依《台籍船員上下船注意事項》2026/09/10 版整理；涉及船期、個案核銷與特殊情況時，以公司最新通知及承辦人回覆為準。
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/qa-config.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
