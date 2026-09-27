@@ -129,7 +129,7 @@ const topics = [
  html:`<ol>
  <li><strong>國內下船：</strong>下船後請將手冊及護照交予台灣各港口代理行或寄回公司辦理任卸職手續。</li>
  <li><strong>國外上船：</strong>請於上船後將登機證繳交予船長，隨船帳將登機證寄回公司。</li>
- <li><strong>國外下船：</strong>請於下船 <strong>3 日內</strong>將登機證、船員手冊和護照寄回公司，以辦理任卸職。</li>
+ <li><strong>國外下船：</strong>請於下船 <strong>3 日內</strong>將 <strong>登機證、船員手冊和護照 </strong>寄回公司，以辦理任卸職。</li>
  <li><strong>國外上下船：</strong>入海關時請勿使用快速通關，務必於護照上蓋出入境章。</li>
  </ol>`
 },
@@ -186,7 +186,7 @@ const topics = [
 },
 {
  id:"union", title:"海員工會會費代扣", source:"附件第 2 頁",
- keywords:"海員工會 工會費 代扣 余慈蕙 6871 船員管理二課",
+ keywords:"海員工會 工會費 代扣 6871 船員管理二課",
  html:`<p>公司提供代扣海員工會會費服務，在船期間之工會費由公司按月代扣。</p>
  <p>如需申請，請向船員管理二課 <strong>余小姐（分機 6871）</strong> 索取「代扣海員工會會費申請」。</p>`
 },
