@@ -37,7 +37,7 @@ const RESOURCE_LINKS = [
   {
     title: "E-learning",
     description: "線上學習、課程與教育訓練資源。",
-    label: "💻",
+    icon: "💻",
       
        action:
       [
