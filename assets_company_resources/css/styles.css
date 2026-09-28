@@ -91,3 +91,363 @@ h1{margin:8px 0 10px;font-size:clamp(32px,5vw,50px);line-height:1.08}
 .footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;padding:22px 0 6px}
 @media(max-width:900px){.resource-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.wrap{padding:13px}.hero{padding:24px 19px;border-radius:22px}.topbar{align-items:flex-start}.action-group{grid-template-columns:1fr}}
+
+/* =========================================================
+   船隊行政作業手冊問答
+   ========================================================= */
+
+.manual-qa-box{
+  margin-top:28px;
+  margin-bottom:28px;
+  padding:28px;
+
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+
+  box-shadow:0 12px 30px rgba(20,48,70,.06);
+}
+
+
+/* 標題區 */
+
+.manual-qa-heading{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:22px;
+}
+
+.manual-qa-icon{
+  width:56px;
+  height:56px;
+  flex:0 0 56px;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:17px;
+  background:var(--soft);
+
+  font-size:29px;
+  line-height:1;
+}
+
+.manual-qa-heading h2{
+  margin:0;
+
+  color:var(--navy);
+  font-size:22px;
+  font-weight:900;
+  line-height:1.35;
+}
+
+.manual-qa-heading p{
+  margin:6px 0 0;
+
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+
+/* 搜尋區 */
+
+.manual-qa-form{
+  margin-top:6px;
+}
+
+.manual-qa-label{
+  display:block;
+  margin-bottom:8px;
+
+  color:var(--navy);
+  font-size:14px;
+  font-weight:800;
+}
+
+.manual-qa-input-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+}
+
+.manual-qa-input{
+  width:100%;
+  min-width:0;
+  height:48px;
+
+  padding:0 15px;
+
+  border:1px solid var(--line);
+  border-radius:12px;
+
+  background:#fbfdff;
+  color:var(--navy);
+
+  font-size:15px;
+  font-family:inherit;
+
+  outline:none;
+  transition:.18s ease;
+}
+
+.manual-qa-input::placeholder{
+  color:#98a4ad;
+}
+
+.manual-qa-input:focus{
+  border-color:#8fc8c4;
+  background:#fff;
+
+  box-shadow:0 0 0 3px rgba(66,153,145,.10);
+}
+
+.manual-qa-submit{
+  min-width:92px;
+  height:48px;
+
+  padding:0 18px;
+
+  border:0;
+  border-radius:12px;
+
+  background:var(--navy);
+  color:#fff;
+
+  font-size:14px;
+  font-weight:800;
+  font-family:inherit;
+
+  cursor:pointer;
+  transition:.18s ease;
+}
+
+.manual-qa-submit:hover{
+  transform:translateY(-1px);
+  opacity:.94;
+}
+
+.manual-qa-submit:active{
+  transform:translateY(0);
+}
+
+.manual-qa-help{
+  margin-top:8px;
+
+  color:var(--muted);
+  font-size:12.5px;
+  line-height:1.6;
+}
+
+
+/* 常用查詢 */
+
+.manual-qa-examples{
+  margin-top:16px;
+
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.manual-qa-examples-title{
+  color:var(--muted);
+  font-size:12.5px;
+  font-weight:700;
+}
+
+.manual-qa-example{
+  padding:7px 11px;
+
+  border:1px solid #bddedb;
+  border-radius:999px;
+
+  background:var(--soft);
+  color:#167a74;
+
+  font-size:12px;
+  font-weight:700;
+  font-family:inherit;
+
+  cursor:pointer;
+  transition:.18s ease;
+}
+
+.manual-qa-example:hover{
+  background:#e6f4f2;
+  border-color:#91cbc6;
+}
+
+
+/* 搜尋狀態 */
+
+.manual-qa-status{
+  margin-top:20px;
+
+  color:var(--muted);
+  font-size:13px;
+  font-weight:700;
+  line-height:1.6;
+}
+
+
+/* 搜尋結果區 */
+
+.manual-qa-results{
+  margin-top:12px;
+
+  display:grid;
+  gap:12px;
+}
+
+.manual-qa-result{
+  padding:18px;
+
+  border:1px solid var(--line);
+  border-radius:15px;
+
+  background:#fbfdff;
+}
+
+.manual-qa-result-top{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  margin-bottom:10px;
+}
+
+.manual-qa-result-no{
+  width:28px;
+  height:28px;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:9px;
+
+  background:var(--soft);
+  color:#167a74;
+
+  font-size:12px;
+  font-weight:900;
+}
+
+.manual-qa-relevance{
+  padding:5px 9px;
+
+  border-radius:999px;
+
+  background:#edf7f6;
+  color:#31827d;
+
+  font-size:11px;
+  font-weight:800;
+}
+
+.manual-qa-result h3{
+  margin:0 0 10px;
+
+  color:var(--navy);
+  font-size:16px;
+  font-weight:900;
+  line-height:1.55;
+}
+
+.manual-qa-answer{
+  color:#44596a;
+  font-size:14px;
+  line-height:1.8;
+}
+
+.manual-qa-source{
+  margin-top:12px;
+  padding-top:10px;
+
+  border-top:1px solid var(--line);
+
+  color:var(--muted);
+  font-size:11.5px;
+  line-height:1.6;
+}
+
+
+/* 全文搜尋備援結果 */
+
+.manual-qa-result-fallback{
+  background:#fffdf8;
+}
+
+/* NOTE */
+
+.manual-qa-note{
+  margin-top:20px;
+  padding:14px 16px;
+
+  border:1px solid #ead27b;
+  border-radius:13px;
+
+  background:#fff8df;
+  color:#4b4a3c;
+
+  font-size:12.5px;
+  line-height:1.7;
+}
+
+.manual-qa-note strong{
+  color:var(--navy);
+}
+
+
+/* 資料庫尚未載入 */
+
+.manual-qa-error{
+  padding:16px;
+
+  border:1px solid #e6b7b7;
+  border-radius:12px;
+
+  background:#fff5f5;
+  color:#9b3c3c;
+
+  font-size:13px;
+  line-height:1.6;
+}
+
+
+/* 手機版 */
+
+@media(max-width:650px){
+  .manual-qa-box{
+    padding:20px 16px;
+    border-radius:18px;
+  }
+  .manual-qa-heading{
+    align-items:flex-start;
+  }
+  .manual-qa-icon{
+    width:48px;
+    height:48px;
+    flex-basis:48px;
+    font-size:25px;
+    border-radius:14px;
+  }
+  .manual-qa-heading h2{
+    font-size:19px;
+  }
+  .manual-qa-input-row{
+    grid-template-columns:1fr;
+  }
+  .manual-qa-submit{
+    width:100%;
+  }
+  .manual-qa-examples{
+    align-items:flex-start;
+  }
+  .manual-qa-result{
+    padding:15px;
+  }
+
+}
