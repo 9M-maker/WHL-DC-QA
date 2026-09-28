@@ -48,7 +48,7 @@ h1{margin:8px 0 10px;font-size:clamp(32px,5vw,50px);line-height:1.08}
   margin-top:auto;
   padding-top:18px;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr;
   gap:9px;
 }
 .action-btn{
