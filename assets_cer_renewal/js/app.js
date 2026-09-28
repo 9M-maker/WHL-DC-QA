@@ -39,7 +39,7 @@ function openParent(id){
 }
 function gallery(imgs){
   if(!imgs || !imgs.length) return "";
-  return `<section class="gallerybox"><h3>附件預覽</h3><p>點圖片可放大查看。</p><div class="gallery">${
+  return `<section class="gallerybox"><h3>文件預覽</h3><p>點圖片可放大查看。</p><div class="gallery">${
     imgs.map(([src,label]) => `<div class="doc"><h4>${label}</h4><img src="${src}" alt="${label}" data-full="${src}"><a class="doc-link" href="${src}" target="_blank" rel="noopener">另開圖片 ↗</a></div>`).join("")
   }</div></section>`;
 }

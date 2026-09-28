@@ -13,13 +13,13 @@ const RESOURCE_LINKS = [
       },
       {
         type: "download",
-        label: "下載熟悉訓練單<br>(需簽回給PIC)",
+        label: "下載熟悉訓練單\n(需簽回給PIC)",
         url: "../assets_company_resources/docs/1.【台籍船員請列印並簽名】. 船員職前熟悉訓練單(TW)  -202608版.pdf",
         fileName: "船員職前熟悉訓練單(TW)-202608版.pdf"
       },
       {
         type: "link",
-        label: "交通部航港局<br>船員數位學習網",
+        label: "交通部航港局\n船員數位學習網",
         url: "https://elearn.motcmpb.gov.tw/mooc/mpb/course_center.php?tab=2"
       },
       {
@@ -44,7 +44,7 @@ const RESOURCE_LINKS = [
       },
       {
         type: "preview",
-        label: "心理諮商資源與協助管道",
+        label: "心理諮商資源\n與協助管道",
         url: "../assets_company_resources/docs/【宣導】不適應輔導與心理諮商-202609.pdf",
         fileName: "【宣導】不適應輔導與心理諮商-202609.pdf"
       }
@@ -64,13 +64,13 @@ const RESOURCE_LINKS = [
       },
       {
         type: "preview",
-        label: "E-learning<br>安裝說明",
+        label: "E-learning\n安裝說明",
         url: "../assets_company_resources/docs/【說明】E-learning 操作教學-2026-1.pdf",
         fileName: "【說明】E-learning 操作教學-2026-1.pdf"
       },
       {
         type: "preview",
-        label: "E-learning<br>APP打卡說明",
+        label: "E-learning\nAPP打卡說明",
         url: "../assets_company_resources/docs/【說明】E-learning 操作教學-2026-2-實體點名系統操作說明.pdf",
         fileName: "【說明】E-learning 操作教學-2026-2-實體點名系統操作說明.pdf"
       }
