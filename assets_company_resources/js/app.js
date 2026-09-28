@@ -37,8 +37,9 @@ function createActionButton({label, href, type="link", fileName=""}){
   a.href = href;
 
   if(type === "download"){
-    a.download = fileName || "";
-    a.textContent = "下載相關檔案";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = "下載相關檔案↗";
   }else{
     a.target = "_blank";
     a.rel = "noopener noreferrer";
