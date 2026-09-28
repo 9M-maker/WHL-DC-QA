@@ -14,14 +14,19 @@ const RESOURCE_LINKS = [
       {
         type: "download",
         label: "下載熟悉訓練單(需簽回給PIC)",
-        url: "",
-        fileName: ""
+        url: "../assets_company_resources/docs/1.【台籍船員請列印並簽名】. 船員職前熟悉訓練單(TW)  -202608版.pdf",
+        fileName: "船員職前熟悉訓練單(TW)  -202608版.pdf"
+      },
+      {
+        type: "link",
+        label: "交通部航港局 船員數位學習網",
+        url: "https://elearn.motcmpb.gov.tw/mooc/mpb/course_center.php?tab=2"
       },
       {
         type: "preview",
         label: "上國輪必讀",
-        url: "",
-        fileName: ""
+        url: "../assets_company_resources/docs/【宣導】上國輪必讀-202609.pdf",
+        fileName: "【宣導】上國輪必讀-202609.pdf"
       }
     ]
   },
