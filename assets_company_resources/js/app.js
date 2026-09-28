@@ -54,7 +54,7 @@ function createCard(item){
 
   card.innerHTML = `
     <div class="card-top">
-      <span class="icon">${iconMap[item.icon] || iconMap.link}</span>
+      <span class="icon">${item.icon || "🔗"}</span>
     </div>
     <div>
       <h3>${item.title}</h3>

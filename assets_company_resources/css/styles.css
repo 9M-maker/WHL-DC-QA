@@ -38,8 +38,8 @@ h1{margin:8px 0 10px;font-size:clamp(32px,5vw,50px);line-height:1.08}
   box-shadow:0 12px 28px rgba(18,49,77,.065)
 }
 .card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-.icon{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;background:var(--soft);color:var(--navy)}
-.icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.icon{width:54px;height:54px;border-radius:17px;display:grid;place-items:center;background:var(--soft);font-size:28px;line-height:1;}
+
 .arrow{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#f5f9fb;color:var(--navy);font-weight:900;transition:.18s ease}
 .resource-card h3{margin:0 0 8px;color:var(--navy);font-size:19px}
 .resource-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.65}
