@@ -273,9 +273,9 @@ const DATA = {
       "id": "sg_filename",
       "parent": "sg",
       "title": "檔案格式、大小與命名規則",
-      "short": "依指定檔名存成電子檔，並在檔名後加自己的英文名字首，避免檔案混亂。ex: 王大明(WANG DA MING) → MED TW_WDM、PP_WDM。",
+      "short": "依指定檔名存成電子檔，並在檔名後加自己的英文名字首，避免檔案混亂。",
       "keywords": "檔名 命名 格式 大小 英文名字首",
-      "html": "<ul><li>依總表指定檔名，例如 MED TW、PP、SMB、BASIC、SBTA、IMDA。</li><li>請於指定檔名後再加上自己的英文名字首，降低檔案混淆。</li><li>各檔案須符合 PDF/JPG 與大小限制。</li></ul>",
+      "html": "<ul><li>依總表指定檔名，例如 MED TW、PP、SMB、BASIC、SBTA、IMDA。</li><li>請於指定檔名後再加上自己的英文名字首，降低檔案混淆。ex: 王大明(WANG DA MING) → MED TW_WDM、PP_WDM。</li><li>各檔案須符合 PDF/JPG 與大小限制。</li></ul>",
       "imgs": [
         [
           "../assets_cer_renewal/docs/singapore/filename-rule.jpg",

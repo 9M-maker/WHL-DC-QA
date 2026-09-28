@@ -413,9 +413,4 @@ const topics = [
  <li>體檢表上的醫院英文地址與國籍請填寫 <strong>Taiwan</strong>；若醫院蓋章含「R.O.C」等字樣，請將其遮蔽。</li>
  </ol>`
 },
-{
- id:"final-note", title:"重要提醒", source:"附件第 4 頁",
- keywords:"重要提醒 權益 勞健保 帶上船 費用申報 福利 詳讀 簽署",
- html:`<div class="note">以上內容事關同仁權益，尤其勞健保部分；請詳閱後帶上船，以備參考費用申報及福利事項等相關規範。</div>`
-}
 ];
