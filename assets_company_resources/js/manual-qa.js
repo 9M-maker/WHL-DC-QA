@@ -18,10 +18,12 @@
   const CONFIG = {
     mountId: "manualQa",
     maxResults: 6,
+    candidateLimit: 40,
+    keyLines: 5,
     minScore: 14,
-    fallbackPages: 3,
-    title: "船隊行政作業手冊-章節查閱問答",
-    description: "輸入想知道的關鍵字或問題，網站會從行政作業手冊中搜尋最相關內容，幫助你找到相關章節查閱。",
+    fallbackPages: 6,
+    title: "船隊行政作業手冊問答",
+    description: "輸入關鍵字或完整問題，系統會從行政作業手冊中搜尋最相關內容。",
     placeholder: "例如：離船要提前多久申請？",
     note: "本問答內容依船隊行政作業手冊整理，僅供快速查詢；如與最新公司通告、僱傭契約或正式規章不同，仍以最新正式文件為準。",
     examples: [
@@ -410,7 +412,7 @@
     return `
       <section class="manual-qa-box" aria-labelledby="manualQaTitle">
         <div class="manual-qa-heading">
-          <div class="manual-qa-icon" aria-hidden="true">🔎</div>
+          <div class="manual-qa-icon" aria-hidden="true">📘</div>
           <div>
             <h2 id="manualQaTitle">${escapeHtml(CONFIG.title)}</h2>
             <p>${escapeHtml(CONFIG.description)}</p>
@@ -449,48 +451,244 @@
     `;
   }
 
-  function resultHtml(item, index) {
-    const e = item.entry;
-    const chapter = e.chapter || "船隊行政作業手冊";
-    const section = e.section || "";
-    const pageLabel = e.manualPage
-      ? `手冊頁 ${e.manualPage}`
-      : (e.pdfPage ? `PDF 第 ${e.pdfPage} 頁` : "");
+  function splitKeySentences(text) {
+    const raw = String(text || "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    if (!raw) return [];
+
+    return raw
+      .split(/(?<=[。！？；;])\s*/g)
+      .map(x => x.trim())
+      .filter(x => x.length >= 8);
+  }
+
+  function sentenceScore(sentence, item, terms) {
+    const ns = normalize(sentence);
+    const cs = compact(sentence);
+    let score = item.score * 0.55;
+    let hits = 0;
+
+    terms.forEach(term => {
+      const nt = normalize(term);
+      const ct = compact(term);
+      if (!nt) return;
+
+      if (ns.includes(nt) || cs.includes(ct)) {
+        score += 24;
+        hits += 1;
+      }
+    });
+
+    const section = normalize(item.entry.section || "");
+    terms.forEach(term => {
+      const nt = normalize(term);
+      if (nt && section.includes(nt)) score += 8;
+    });
+
+    // 過短的標題句或過長的大段落稍微降權。
+    if (sentence.length < 14) score -= 12;
+    if (sentence.length > 260) score -= 6;
+
+    if (terms.length && hits / terms.length >= 0.5) score += 18;
+
+    return score;
+  }
+
+  function buildBestChapter(query) {
+    ensureIndexes();
+    const terms = buildTerms(query);
+
+    const ranked = dedupeResults(
+      entryIndex
+        .map(({ entry, idx }) => ({
+          entry,
+          score: scoreEntry(entry, idx, query, terms)
+        }))
+        .filter(item => item.score >= CONFIG.minScore)
+        .sort((a, b) => b.score - a.score)
+    )
+      .filter(item => {
+        const answer = String(item.entry.answer || "").trim();
+        return item.entry.type !== "heading" && answer.length >= 8;
+      })
+      .slice(0, CONFIG.candidateLimit);
+
+    if (!ranked.length) return null;
+
+    const groups = new Map();
+
+    ranked.forEach(item => {
+      const chapter = item.entry.chapter || "船隊行政作業手冊";
+
+      if (!groups.has(chapter)) {
+        groups.set(chapter, {
+          chapter,
+          items: [],
+          score: 0,
+          topScore: 0
+        });
+      }
+
+      const group = groups.get(chapter);
+      group.items.push(item);
+      group.topScore = Math.max(group.topScore, item.score);
+    });
+
+    groups.forEach(group => {
+      const sorted = [...group.items].sort((a, b) => b.score - a.score);
+
+      // 最佳單筆最重要；同章還有其他命中時再加分。
+      group.score = sorted[0].score;
+      sorted.slice(1, 6).forEach((item, i) => {
+        group.score += item.score * (i === 0 ? 0.35 : 0.18);
+      });
+    });
+
+    const best = [...groups.values()]
+      .sort((a, b) => b.score - a.score)[0];
+
+    const sentenceCandidates = [];
+
+    best.items.forEach(item => {
+      splitKeySentences(item.entry.answer).forEach(sentence => {
+        sentenceCandidates.push({
+          sentence,
+          item,
+          score: sentenceScore(sentence, item, terms)
+        });
+      });
+    });
+
+    sentenceCandidates.sort((a, b) => b.score - a.score);
+
+    const seen = new Set();
+    const keyLines = [];
+
+    for (const candidate of sentenceCandidates) {
+      const key = compact(candidate.sentence);
+      if (!key || seen.has(key)) continue;
+
+      // 避免同一句只是多了序號或少數空格而重複出現。
+      const duplicate = keyLines.some(line => {
+        const existing = compact(line.sentence);
+        return existing.includes(key) || key.includes(existing);
+      });
+      if (duplicate) continue;
+
+      seen.add(key);
+      keyLines.push(candidate);
+
+      if (keyLines.length >= CONFIG.keyLines) break;
+    }
+
+    // 萬一切句後太少，至少保留最高相關答案。
+    if (!keyLines.length && best.items[0]) {
+      keyLines.push({
+        sentence: String(best.items[0].entry.answer || "").trim(),
+        item: best.items[0],
+        score: best.items[0].score
+      });
+    }
+
+    return {
+      chapter: best.chapter,
+      score: best.score,
+      topScore: best.topScore,
+      keyLines
+    };
+  }
+
+  function bestChapterHtml(result) {
+    const sourceLabels = unique(
+      result.keyLines.map(line => {
+        const e = line.item.entry;
+        const section = e.section || "";
+        const pageLabel = e.manualPage
+          ? `手冊頁 ${e.manualPage}`
+          : (e.pdfPage ? `PDF 第 ${e.pdfPage} 頁` : "");
+
+        return [section, pageLabel].filter(Boolean).join("／");
+      })
+    );
 
     return `
       <article class="manual-qa-result">
         <div class="manual-qa-result-top">
-          <span class="manual-qa-result-no">${index + 1}</span>
-          <span class="manual-qa-relevance">${confidenceLabel(item.score)}</span>
+          <span class="manual-qa-relevance">${confidenceLabel(result.topScore)}</span>
         </div>
-        <h3>${escapeHtml(e.question || section || chapter)}</h3>
-        <div class="manual-qa-answer">${escapeHtml(e.answer || "").replace(/\n/g, "<br>")}</div>
-        <div class="manual-qa-source">
-          <span>${escapeHtml(chapter)}</span>
-          ${section ? `<span>／${escapeHtml(section)}</span>` : ""}
-          ${pageLabel ? `<span>／${escapeHtml(pageLabel)}</span>` : ""}
+
+        <h3>${escapeHtml(result.chapter)}</h3>
+
+        <div class="manual-qa-answer">
+          ${result.keyLines.map(line => `
+            <div style="margin:0 0 10px;">
+              • ${escapeHtml(line.sentence)}
+            </div>
+          `).join("")}
         </div>
+
+        ${sourceLabels.length ? `
+          <div class="manual-qa-source">
+            <span>相關位置：${escapeHtml(sourceLabels.join("、"))}</span>
+          </div>
+        ` : ""}
       </article>
     `;
   }
 
-  function fallbackHtml(item, index) {
-    const p = item.page;
-    const pageLabel = p.manualPage
-      ? `手冊頁 ${p.manualPage}`
-      : `PDF 第 ${p.pdfPage} 頁`;
+  function fallbackChapterResult(query) {
+    const pages = searchPages(query);
+    if (!pages.length) return null;
+
+    const grouped = new Map();
+
+    pages.forEach(item => {
+      const chapter = item.page.chapter || "船隊行政作業手冊";
+      if (!grouped.has(chapter)) grouped.set(chapter, []);
+      grouped.get(chapter).push(item);
+    });
+
+    const [chapter, items] = [...grouped.entries()]
+      .sort((a, b) => {
+        const scoreA = a[1].reduce((sum, x) => sum + x.score, 0);
+        const scoreB = b[1].reduce((sum, x) => sum + x.score, 0);
+        return scoreB - scoreA;
+      })[0];
+
+    return {
+      chapter,
+      items: items.slice(0, 3)
+    };
+  }
+
+  function fallbackChapterHtml(result) {
+    const locations = unique(result.items.map(item => {
+      const p = item.page;
+      return p.manualPage
+        ? `手冊頁 ${p.manualPage}`
+        : `PDF 第 ${p.pdfPage} 頁`;
+    }));
 
     return `
       <article class="manual-qa-result manual-qa-result-fallback">
         <div class="manual-qa-result-top">
-          <span class="manual-qa-result-no">${index + 1}</span>
           <span class="manual-qa-relevance">全文搜尋</span>
         </div>
-        <h3>${escapeHtml(p.chapter || "船隊行政作業手冊")}</h3>
-        <div class="manual-qa-answer">${escapeHtml(item.excerpt)}</div>
+
+        <h3>${escapeHtml(result.chapter)}</h3>
+
+        <div class="manual-qa-answer">
+          ${result.items.map(item => `
+            <div style="margin:0 0 10px;">
+              • ${escapeHtml(item.excerpt)}
+            </div>
+          `).join("")}
+        </div>
+
         <div class="manual-qa-source">
-          <span>${escapeHtml(p.chapter || "船隊行政作業手冊")}</span>
-          <span>／${escapeHtml(pageLabel)}</span>
+          <span>相關位置：${escapeHtml(locations.join("、"))}</span>
         </div>
       </article>
     `;
@@ -508,19 +706,19 @@
 
     input.value = q;
 
-    const matches = searchEntries(q);
+    const bestChapter = buildBestChapter(q);
 
-    if (matches.length) {
-      status.textContent = `找到 ${matches.length} 筆最相關內容。`;
-      results.innerHTML = matches.map(resultHtml).join("");
+    if (bestChapter) {
+      status.textContent = "已找到最相關章節與關鍵內容。";
+      results.innerHTML = bestChapterHtml(bestChapter);
       return;
     }
 
-    const pageMatches = searchPages(q);
+    const fallback = fallbackChapterResult(q);
 
-    if (pageMatches.length) {
-      status.textContent = "未找到明確問答項目，以下改以手冊全文搜尋顯示相關段落。";
-      results.innerHTML = pageMatches.map(fallbackHtml).join("");
+    if (fallback) {
+      status.textContent = "未找到明確問答項目，以下顯示手冊全文中最相關章節與段落。";
+      results.innerHTML = fallbackChapterHtml(fallback);
       return;
     }
 
@@ -565,6 +763,7 @@
     window.ManualQA = {
       search: query => searchEntries(query),
       searchPages: query => searchPages(query),
+      bestChapter: query => buildBestChapter(query),
       ask: query => renderSearch(query, refs),
       focus: () => input.focus()
     };
