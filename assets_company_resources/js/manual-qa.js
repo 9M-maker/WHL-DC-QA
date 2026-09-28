@@ -20,8 +20,8 @@
     maxResults: 6,
     minScore: 14,
     fallbackPages: 3,
-    title: "船隊行政作業手冊問答",
-    description: "輸入關鍵字或完整問題，系統會從行政作業手冊中搜尋最相關內容。",
+    title: "船隊行政作業手冊-章節查閱問答",
+    description: "輸入想知道的關鍵字或問題，網站會從行政作業手冊中搜尋最相關內容，幫助你找到相關章節查閱。",
     placeholder: "例如：離船要提前多久申請？",
     note: "本問答內容依船隊行政作業手冊整理，僅供快速查詢；如與最新公司通告、僱傭契約或正式規章不同，仍以最新正式文件為準。",
     examples: [
@@ -410,7 +410,7 @@
     return `
       <section class="manual-qa-box" aria-labelledby="manualQaTitle">
         <div class="manual-qa-heading">
-          <div class="manual-qa-icon" aria-hidden="true">📘</div>
+          <div class="manual-qa-icon" aria-hidden="true">🔎</div>
           <div>
             <h2 id="manualQaTitle">${escapeHtml(CONFIG.title)}</h2>
             <p>${escapeHtml(CONFIG.description)}</p>

@@ -7,6 +7,7 @@ const MANUAL_META = {
   "revision": "2026/07-1",
   "issued": "July 2026",
   "sourceFile": "(全冊)船隊行政作業手冊-202607.pdf",
+  "generatedAt": "2026-09-28",
   "pdfPages": 233,
   "chapters": [
     {
