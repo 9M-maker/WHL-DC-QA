@@ -6,7 +6,7 @@ const RESOURCE_LINKS = [
     url: "",
     fileUrl: "",
     fileName: "",
-    icon: "book"
+    icon: "📘"
   },
   {
     title: "心理諮商管道",
@@ -14,14 +14,14 @@ const RESOURCE_LINKS = [
     url: "https://www.morph.com.tw/faq/",
     fileUrl: "../assets_company_resources/docs/【宣導】不適應輔導與心理諮商-202609.pdf",
     fileName: "【宣導】不適應輔導與心理諮商-202609.pdf",
-    icon: "heart"
+    icon: "🫶"
   },
   {
     title: "E-learning",
     description: "線上學習、課程與教育訓練資源。",
-    url: "https://wanhai.elearn.com.tw/dist/#/index“,
+    url: "https://wanhai.elearn.com.tw/dist/#/index/",
     fileUrl: "../assets_company_resources/docs/【說明】E-learning 操作教學-2026-1.pdf",
     fileName: "【說明】E-learning 操作教學-2026-1.pdf",
-    icon: "screen"
+    icon: "💻"
   }
 ];
