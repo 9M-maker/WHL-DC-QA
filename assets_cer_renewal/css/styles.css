@@ -120,3 +120,17 @@ th{background:#f5f9fb;text-align:left;color:var(--navy)} th:last-child,td:last-c
 .download-btn:active {
   transform: translateY(0);
 }
+
+.home-note{
+  margin-top:22px;
+  padding:16px 20px;
+
+  background:#fff8df;
+  border:1px solid #ead27b;
+  border-radius:16px;
+
+  color:#23384b;
+  font-size:14px;
+  font-weight:700;
+  line-height:1.7;
+}
