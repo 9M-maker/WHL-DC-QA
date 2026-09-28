@@ -6,16 +6,16 @@ const MAILING_DATA = {
 
   recipients: [
     {
-      department: "甲板部",
+      department: "船務部 船員管理三課(甲板實習生)",
       nameZh: "洪家芸",
-      nameEn: "Joanne",
+      nameEn: "Joanne Hung",
       extension: "6867",
       mail: "joanne_hung@wanhai.com"
     },
     {
-      department: "輪機部",
+      department: "船務部 船員管理三課(輪機實習生)",
       nameZh: "劉 御",
-      nameEn: "Victor",
+      nameEn: "Victor Liu",
       extension: "6876",
       mail: "victor_liu@wanhai.com"
     }
