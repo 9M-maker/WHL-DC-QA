@@ -3,7 +3,7 @@ const DATA = {
     {
       "id": "taiwan",
       "icon": "🇹🇼",
-      "title": "台灣適任證書（大證）申請",
+      "title": "台灣適任證書（大證/GMDSS）申請",
       "desc": "應備資料、三份主要申請文件、自行換證說明與空白表單下載。",
       "children": [
         "tw_overview",
@@ -78,7 +78,7 @@ const DATA = {
     {
       "id": "tw_coc",
       "parent": "taiwan",
-      "title": "適任證書申請書",
+      "title": "適任證書申請書 填寫範例",
       "short": "正本 2 張，依範例正確填寫後簽名。",
       "keywords": "適任證書 申請書 2張 正本 範例",
       "html": "<ul><li>提供正本 2 張：「一等船副」＆「GMDSS值機員」各一。</li><li>請依範例正確填寫。</li><li>完成後簽名寄回承辦人。</li></ul>",
@@ -130,8 +130,8 @@ const DATA = {
       "id": "tw_download",
       "parent": "taiwan",
       "title": "空白表單下載",
-      "short": "下載辦理台灣適任證書所需的空白表單。",
-      "keywords": "空白 表單 下載",
+      "short": "為確保申請表單為最新版本，下載連結將導向航港局網站下載專區。",
+      "keywords": "空白 表單 下載 申請表 適任證書 辦理執照委託書 船員服務經歷證明申請書",
       "html": `
         <div class="downloads">
         <div class="drow">
@@ -186,7 +186,7 @@ const DATA = {
     {
       "id": "tr_start",
       "parent": "training",
-      "title": "上船前準備與基本項目填寫",
+      "title": "上船前準備與基本項目 填寫說明",
       "short": "第一條船就要開始寫（含非萬海船），依紀錄簿說明完整填寫。",
       "keywords": "第一條船 第12頁 船員名單 訓練紀錄簿",
       "html": "<ul><li>上船前先購買訓練紀錄簿，第一條船就開始填寫。</li><li>依訓練紀錄簿內說明，務必完整填寫。</li><li>第 12 頁先填妥任職過的各條船船名。</li><li>船員名單請用訂書機或加強黏貼，以免遺失。</li></ul>",
@@ -197,7 +197,7 @@ const DATA = {
       "parent": "training",
       "title": "簽署、蓋章與簽署人資料 填寫注意",
       "short": "每一頁都要蓋船章，簽署人與學員應符合之規定。",
-      "keywords": "船章 蓋章 簽署人 同船 同部門 C頁",
+      "keywords": "船章 蓋章 簽署人 同船 同部門 C頁 訓練 紀錄簿",
       "html": "<ul><li><strong>每一頁都需蓋船章。</strong></li><li>C 頁如寫滿，可自行影印續填，影印頁仍需蓋船章。</li><li>訓練簽署人與學員在訓練期間應服務於同一艘船舶，並依規定具相應職務資格。</li><li>簽署人員基本資料表不足時可自行添加。</li></ul>",
       "imgs": []
     },
@@ -231,7 +231,7 @@ const DATA = {
     {
       "id": "tr_official",
       "parent": "training",
-      "title": "官方審查規定與範例",
+      "title": "官方審查作業規定與紀錄簿填寫範例",
       "short": "提供 航港局審查作業規定 與 2A 操作級航行員範例 參考",
       "keywords": "航港局 官方 審查 2A 範例 PDF",
       "html": "<p>請點擊下方連結查閱完整PDF檔案說明。</p><div class='file-actions'><a class='file-link' href='../assets_cer_renewal/docs/training/official-review-rules.pdf' target='_blank' rel='noopener'>開啟審查作業規定 PDF ↗</a><a class='file-link' href='../assets_cer_renewal/docs/training/official-sample-book.pdf' target='_blank' rel='noopener'>開啟 2A 範例 PDF ↗</a></div>",
@@ -259,7 +259,7 @@ const DATA = {
       "id": "sg_overview",
       "parent": "sg",
       "title": "應備文件總表",
-      "short": "先確認台灣證件、英文培訓證明、照片與兩份申請書都齊全。",
+      "short": "確認台灣證件、英文培訓證明、照片與兩份申請書都準備好電子檔。",
       "keywords": "MED TW PP SMB PHOTO GMDSS COC BASIC FIRE BOAT FIRST AID ECDIS BRM SSD ARPA SBTA IMDA",
       "html": "<div class='scroll'><table><thead><tr><th>項目</th><th>指定檔名</th><th>重點</th></tr></thead><tbody><tr><td>交通部體檢表</td><td>MED TW</td><td>PDF，不超過 1000KB；正反面都需掃描，效期至少 8 個月。</td></tr><tr><td>護照</td><td>PP</td><td>PDF，不超過 1000KB；需有簽名。</td></tr><tr><td>海員手冊</td><td>SMB</td><td>PDF，不超過 1000KB；第一頁到資歷頁都需掃描。</td></tr><tr><td>大頭照</td><td>PHOTO</td><td>JPG，不超過 50KB；小於 400×514 pixels。</td></tr><tr><td>台灣證書</td><td>TW GMDSS／TW COC</td><td>PDF 或 JPG，不超過 1000KB。</td></tr><tr><td>英文培訓證明</td><td>BASIC／FIRE／BOAT／FIRST AID／ECDIS／BRM／SSD／ARPA</td><td>PDF 或 JPG，不超過 1000KB；其中 BASIC/FIRE/BOAT/FIRST AID 培訓日期需在 4 年 5 個月內。</td></tr><tr><td>Application Form-SBTA</td><td>SBTA</td><td>填妥、英文簽名、日期押填寫當日。</td></tr><tr><td>IMDA GMDSS Form</td><td>IMDA</td><td>填妥、英文簽名、日期押填寫當日。</td></tr></tbody></table></div>",
       "imgs": [
@@ -273,9 +273,9 @@ const DATA = {
       "id": "sg_filename",
       "parent": "sg",
       "title": "檔案格式、大小與命名規則",
-      "short": "依指定檔名存成電子檔，並在檔名後加自己的英文名字首，避免檔案混亂。",
+      "short": "依指定檔名存成電子檔，並在檔名後加自己的英文名字首，避免檔案混亂。ex: 王大明(WANG DA MING) → MED TW_WDM、PP_WDM。",
       "keywords": "檔名 命名 格式 大小 英文名字首",
-      "html": "<ul><li>依總表指定檔名，例如 MED TW、PP、SMB、BASIC、SBTA、IMDA。</li><li>附件要求在指定檔名後再加上自己的英文名字首，降低檔案混淆。</li><li>各檔案須符合 PDF/JPG 與大小限制。</li></ul>",
+      "html": "<ul><li>依總表指定檔名，例如 MED TW、PP、SMB、BASIC、SBTA、IMDA。</li><li>請於指定檔名後再加上自己的英文名字首，降低檔案混淆。</li><li>各檔案須符合 PDF/JPG 與大小限制。</li></ul>",
       "imgs": [
         [
           "../assets_cer_renewal/docs/singapore/filename-rule.jpg",
@@ -287,6 +287,7 @@ const DATA = {
       "id": "sg_sbta",
       "parent": "sg",
       "title": "新加坡作業申請表（SBTA） 填寫範例",
+      "short": "申請表提交後，請留意公司會寄送新加坡作業撰寫通知之信件。",
       "keywords": "SBTA 英文簽名 填寫 範例 新加坡 作業",
       "html": "<ul><li>依範例填妥各欄位。</li><li>英文簽名。</li><li>日期填寫當日。</li><li>指定檔名：SBTA。</li><li>PDF 或 JPG，不超過 1000KB。</li></ul>",
       "imgs": [
@@ -300,6 +301,7 @@ const DATA = {
       "id": "sg_imda",
       "parent": "sg",
       "title": "新加坡GMDSS申請表（IMDA GOC） 填寫範例",
+      "short": "申請表提交後，將由公司端協助新加坡換證事宜。",
       "keywords": "IMDA GMDSS 英文簽名 新加坡 申請 填寫 範例",
       "html": "<ul><li>依範例填妥各欄位。</li><li>英文簽名。</li><li>日期填寫當日。</li><li>指定檔名：IMDA。</li><li>PDF 或 JPG，不超過 1000KB。</li></ul>",
       "imgs": [
