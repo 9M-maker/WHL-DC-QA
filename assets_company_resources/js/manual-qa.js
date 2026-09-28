@@ -47,7 +47,7 @@
     ["二管", "二管輪", "second engineer", "2/e", "2nd engineer"],
     ["三管", "三管輪", "third engineer", "3/e", "3rd engineer"],
     ["水手長", "bosun", "boatswain"],
-    ["幹練水手", "ab", "able seaman", "able-bodied seaman"],
+    ["幹練水手", "ab", "able seaman", "able-bodied seaman","水手“],
     ["實習生", "駕實生", "輪實生", "cadet"],
     ["伙委", "伙食委員", "伙食團"],
     ["薪資", "薪津", "薪水", "工資", "salary", "wage"],
@@ -412,7 +412,7 @@
     return `
       <section class="manual-qa-box" aria-labelledby="manualQaTitle">
         <div class="manual-qa-heading">
-          <div class="manual-qa-icon" aria-hidden="true">📘</div>
+          <div class="manual-qa-icon" aria-hidden="true">🔎</div>
           <div>
             <h2 id="manualQaTitle">${escapeHtml(CONFIG.title)}</h2>
             <p>${escapeHtml(CONFIG.description)}</p>
