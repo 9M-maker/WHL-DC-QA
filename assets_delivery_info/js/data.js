@@ -1,18 +1,23 @@
 
 const MAILING_DATA = {
-  companyAddress: "台北市內湖區新湖一路361號",
+  companyAddress: "114065 台北市內湖區新湖一路361號",
+  companyNumber: "02-2567-7961",
+  companyTaxID: "11395000",
+
   recipients: [
     {
       department: "甲板部",
       nameZh: "洪家芸",
       nameEn: "Joanne",
-      extension: "6867"
+      extension: "6867",
+      mail: "joanne_hung@wanhai.com"
     },
     {
       department: "輪機部",
       nameZh: "劉 御",
       nameEn: "Victor",
-      extension: "6876"
+      extension: "6876",
+      mail: "victor_liu@wanhai.com"
     }
   ]
 };

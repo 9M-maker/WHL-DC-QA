@@ -56,3 +56,23 @@ h1{margin:8px 0 10px;font-size:clamp(32px,5vw,50px);line-height:1.08}
 .footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.7;padding:22px 0 6px}
 @media(max-width:700px){.recipient-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.wrap{padding:13px}.hero{padding:24px 19px;border-radius:22px}.topbar{align-items:flex-start}}
+
+.company-extra{
+  margin-top:14px;
+  display:grid;
+  gap:6px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+.recipient-mail{
+  margin-top:7px;
+  font-size:14px;
+}
+.recipient-mail a{
+  color:#167a74;
+  text-decoration:none;
+}
+.recipient-mail a:hover{
+  text-decoration:underline;
+}

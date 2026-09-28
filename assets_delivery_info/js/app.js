@@ -82,6 +82,18 @@ function renderMailingInfo(){
   addressCard.innerHTML = `
     <div class="label">公司地址</div>
     <div class="address">${MAILING_DATA.companyAddress}</div>
+
+    <div class="company-extra">
+
+    <div>
+      <strong>公司電話：</strong>
+      ${MAILING_DATA.companyNumber}
+    </div>
+
+    <div>
+      <strong>統一編號：</strong>
+      ${MAILING_DATA.companyTaxID}
+    </div>
   `;
   addressCard.appendChild(
     makeCopyButton(MAILING_DATA.companyAddress, "複製地址")
@@ -107,6 +119,14 @@ function renderMailingInfo(){
       <div class="dept">${person.department}</div>
       <h3>${person.nameZh} ${person.nameEn}</h3>
       <div class="ext">分機 #${person.extension}</div>
+
+      <div class="recipient-mail">
+
+        <a href="mailto:${person.mail}">
+        ${person.mail}
+        </a>
+
+    </div>
     `;
 
     const copyText =
