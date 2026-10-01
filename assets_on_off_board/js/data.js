@@ -141,9 +141,9 @@ const topics = [
  <thead><tr><th>職級</th><th>承辦人</th><th>分機</th></tr></thead>
  <tbody>
  <tr><td>船長</td><td>楊 先生</td><td>6861</td></tr>
- <tr><td>大副</td><td>吳 小姐</td><td>6862</td></tr>
+ <tr><td>大副</td><td>黃 小姐</td><td>6864</td></tr>
  <tr><td>二副</td><td>陳 小姐</td><td>6863</td></tr>
- <tr><td>三副</td><td>黃 先生</td><td>6864</td></tr>
+ <tr><td>三副</td><td>葉 小姐</td><td>6857</td></tr>
  <tr><td>水手長／木匠</td><td>葉 小姐</td><td>6865</td></tr>
  <tr><td>幹練水手／乙級水手</td><td>陳 小姐</td><td>6866</td></tr>
  <tr><td>甲板教育訓練</td><td>李 小姐</td><td>6868</td></tr>
@@ -166,7 +166,7 @@ const topics = [
  <li><strong>體檢表：</strong>請參閱<a href="#" data-open-topic="medical-guide">「台籍船員體檢注意事項」</a>。</li>
  <li><strong>黃皮書：</strong>務必完成黃熱病疫苗注射，效期應為無限期。</li>
  <li><strong>證件效期：</strong>所有證件、證書、上船文件、體檢表等，有效期限皆至少一年以上，並不得在船上換發（實習生換發適任證書除外）。</li>
- <li><strong>照片：</strong>請隨身攜帶半年內 2 吋近照 4 張。</li>
+ <li><strong>照片：</strong>請隨身攜帶半年內 2 吋近照 4 張。**請在背面寫上名字**</li>
  </ol>`
 },
 {
@@ -217,7 +217,7 @@ const topics = [
 {
  id:"transport", title:"台灣地區港口上下船交通費補助", source:"附件第 2 頁",
  keywords:"交通補助 高雄港 台中港 基隆港 台北港 松山機場 桃園機場 小港機場 計程車 基隆 高雄 台中 新竹 台南 屏東",
- html:`<p><strong>A. 大眾交通工具：</strong>實報實銷。</p>
+ html:`<p><strong>A. 大眾交通工具：</strong>實報實銷(計程車除外)。</p>
  <p><strong>B. 異動港市區計程車補助上限：</strong></p>
  <div class="table-scroll"><table>
  <thead><tr><th>區域</th><th>港口</th><th>上限</th></tr></thead>
