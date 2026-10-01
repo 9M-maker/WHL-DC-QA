@@ -141,7 +141,7 @@ const topics = [
  <thead><tr><th>職級</th><th>承辦人</th><th>分機</th></tr></thead>
  <tbody>
  <tr><td>船長</td><td>楊 先生</td><td>6861</td></tr>
- <tr><td>大副</td><td>黃 小姐</td><td>6864</td></tr>
+ <tr><td>大副</td><td>黃 先生</td><td>6864</td></tr>
  <tr><td>二副</td><td>陳 小姐</td><td>6863</td></tr>
  <tr><td>三副</td><td>葉 小姐</td><td>6857</td></tr>
  <tr><td>水手長／木匠</td><td>葉 小姐</td><td>6865</td></tr>
